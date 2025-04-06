@@ -1,9 +1,13 @@
 <template>
     <div v-if="showPreloader" class="w-full h-screen m-auto flex flex-col items-center justify-center gap-8">
-        <loader />
+        <Loader />
     </div>
-    <div v-cloak v-show="!showPreloader">
-        <RouterView />
+
+    <div v-cloak v-show="!showPreloader" style="border: 2px dashed red; padding: 20px;">
+        <RouterView v-slot="{ Component }">
+            <component :is="Component" v-if="Component" />
+            <div v-else>⚠️ Component failed to load or not found.</div>
+        </RouterView>
     </div>
 </template>
 
@@ -12,43 +16,47 @@ import Loader from './components/Loader.vue';
 import { onMounted, onUnmounted, provide, ref, watchEffect } from 'vue';
 
 const theme = ref<string>(localStorage.getItem('theme') || 'light');
-
 const showPreloader = ref<boolean>(false);
 
+// Применение темы
 watchEffect(() => {
     document.documentElement.setAttribute('data-theme', theme.value);
     localStorage.setItem('theme', theme.value);
 });
 
-provide('theme', theme);
-provide('toggleTheme', () => {
-    theme.value = theme.value == 'light' ? 'dark' : 'light';
-});
-
+// Эмуляция задержки лоадера
 async function processPreloader() {
-    let id: number;
-
+    console.log('⏳ Showing preloader...');
     return new Promise((resolve) => {
-        id = setTimeout(() => {
-            clearTimeout(id);
+        setTimeout(() => {
             showPreloader.value = false;
+            console.log('✅ Hiding preloader.');
             resolve(true);
-        }, 800);
+        }, 2000);
     });
 }
 
+// Очистка визита, если ушел на другой сайт
 function handleUnload() {
     if (!document.referrer.includes(window.location.host)) {
         sessionStorage.removeItem('visited');
     }
 }
 
+function handleVisibilityChange() {
+    if (document.visibilityState === 'hidden') {
+        handleUnload();
+    }
+}
+
+// Основная инициализация
 onMounted(async () => {
     const previousPage = document.referrer;
     const hasVisited = sessionStorage.getItem('visited');
-
     const isFirstVisit = !hasVisited;
     const isExternalVisit = !previousPage || !previousPage.includes(window.location.host);
+
+    console.log('🔍 First visit:', isFirstVisit, '| External visit:', isExternalVisit);
 
     if (isFirstVisit || isExternalVisit) {
         sessionStorage.setItem('visited', 'true');
@@ -56,15 +64,11 @@ onMounted(async () => {
         await processPreloader();
     }
 
-    window.addEventListener('visibilitychange', () => {
-        if (document.visibilityState === 'hidden') {
-            handleUnload();
-        }
-    });
+    window.addEventListener('visibilitychange', handleVisibilityChange);
 });
 
 onUnmounted(() => {
-    window.removeEventListener('visibilitychange', handleUnload);
+    window.removeEventListener('visibilitychange', handleVisibilityChange);
 });
 </script>
 
