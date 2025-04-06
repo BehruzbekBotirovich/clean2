@@ -51,6 +51,18 @@
                                     class="w-auto h-full object-cover scale-110 rounded-lg" />
                             </div>
                         </SwiperSlide>
+                        <SwiperSlide class="overflow-visible">
+                            <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
+                                <img src="/src/assets/images/cleaner2.png"
+                                    class="w-auto h-full object-cover scale-110 rounded-lg" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide class="overflow-visible">
+                            <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
+                                <img src="/src/assets/images/cleaner3.png"
+                                    class="w-auto h-full object-cover scale-110 rounded-lg" />
+                            </div>
+                        </SwiperSlide>
                     </Swiper>
                 </div>
 

@@ -41,13 +41,14 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 
 const images = [
-    '/src/assets/images/home.webp',
-    '/src/assets/images/home.webp',
-    '/src/assets/images/home.webp',
-    '/src/assets/images/home.webp',
-    '/src/assets/images/home.webp',
-    '/src/assets/images/home.webp',
-    '/src/assets/images/home.webp',
+    '/src/assets/slider/after1.png',
+    '/src/assets/slider/before1.png',
+    '/src/assets/slider/bruschatka.jpg',
+    '/src/assets/slider/carpet.jpg',
+    '/src/assets/slider/fasad.jpg',
+    '/src/assets/slider/remont.jpeg',
+    '/src/assets/slider/home.jpeg',
+    '/src/assets/slider/sofa.jpg',
 ]
 </script>
 
