@@ -1,0 +1,4 @@
+VITE_BASE_URL = /
+VITE_API_URL = https://hunar.icomment.uz/swagger-ui/index.html 
+VITE_API_BASE_URL = https://localhost:3001
+VITE_DEFAULT_LANG = en

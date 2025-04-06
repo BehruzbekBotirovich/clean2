@@ -1,0 +1,89 @@
+<template>
+    <div class="py-12 w-full max-w-6xl mx-auto">
+        <h2 class="text-3xl font-morice  text-center mb-4">
+            <span class="text-maingreen">ГАЛЕРЕЯ</span> НАШИХ РАБОТ
+        </h2>
+        <swiper :modules="[Navigation]" :slides-per-view="1.8" centeredSlides :space-between="30" navigation loop
+            class="overflow-visible">
+            <swiper-slide v-for="(img, i) in images" :key="i" class="swiper-slide-custom py-10">
+                <div class="overflow-hidden rounded-xl shadow-lg transition-all duration-500">
+                    <img :src="img" alt="gallery image" class="w-full h-[400px] object-cover rounded-xl" />
+                </div>
+            </swiper-slide>
+
+            <template #navigation-prev>
+                <div
+                    class="swiper-button-prev-custom bg-maingreen text-white w-10 h-10 flex items-center justify-center rounded-full shadow hover:bg-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </div>
+            </template>
+
+            <template #navigation-next>
+                <div
+                    class="swiper-button-next-custom bg-maingreen text-white w-10 h-10 flex items-center justify-center rounded-full shadow hover:bg-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </div>
+            </template>
+        </swiper>
+    </div>
+</template>
+
+<script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+
+const images = [
+    '/src/assets/images/home.webp',
+    '/src/assets/images/home.webp',
+    '/src/assets/images/home.webp',
+    '/src/assets/images/home.webp',
+    '/src/assets/images/home.webp',
+    '/src/assets/images/home.webp',
+    '/src/assets/images/home.webp',
+]
+</script>
+
+<style scoped>
+.swiper-slide-custom {
+    transition: all 0.4s ease;
+    opacity: 0.5;
+    transform: scale(0.85);
+}
+
+.swiper-slide-active {
+    opacity: 1 !important;
+    transform: scale(1.05) !important;
+    z-index: 10;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+    opacity: 0.7;
+    transform: scale(0.95);
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.swiper-button-prev-custom {
+    left: -2rem;
+}
+
+.swiper-button-next-custom {
+    right: -2rem;
+}
+</style>

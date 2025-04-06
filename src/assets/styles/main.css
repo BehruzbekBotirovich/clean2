@@ -1,0 +1,122 @@
+@import 'tailwindcss';
+@import '../fonts/morice.css';
+@import '../fonts/gilroy/gilroy.css'
+
+
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark;
+}
+
+@utility container {
+    max-width: 90vw !important;
+    padding-inline: 10px;
+    margin-inline: auto;
+
+    @variant sm {
+        padding-inline: 20px;
+    }
+
+    @variant md {
+        padding-inline: 40px;
+    }
+
+    @variant lg {
+        padding-inline: 60px;
+    }
+
+    @variant xl {
+        padding-inline: 80px;
+    }
+}
+
+@theme {
+    --font-morice: "Morice Bejar", sans-serif;
+    --font-gilroy: 'Gilroy';
+    --font-roboto: "Roboto", sans-serif;
+    --color-maingreen: #AED287;
+    --color-maingray: #CDCDCD;
+    --color-graylight: #f5f5f5;
+    --color-graydark: #3e3e3e;
+}
+
+
+html {
+    color: #3e3e3e;
+    font-size: 10px;
+
+    @variant sm {
+        font-size: 12px;
+    }
+
+    @variant md {
+        font-size: 13px;
+    }
+
+    @variant lg {
+        font-size: 15px;
+    }
+
+    @variant xl {
+        font-size: 16px;
+    }
+
+    @variant 2xl {
+        font-size: 18px;
+    }
+}
+
+.router-link-active {
+    @apply text-indigo-500 font-semibold border-b-2 border-indigo-500;
+}
+
+.router-link-exact-active {
+    @apply text-indigo-700 font-bold border-b-2 border-indigo-700;
+}
+
+.section-title {
+    margin-left: 10px;
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.section-title::before {
+    content: '';
+    width: 4px;
+    height: 10px;
+    background: #F81539;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+}
+
+.truncate-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.btn {
+    border: none;
+    border-radius: 0.75rem;
+}
+
+
+.shadow-custom-btn {
+    box-shadow: 0px 0px 32px 0px #00000012;
+}
