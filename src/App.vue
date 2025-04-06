@@ -3,7 +3,7 @@
         <Loader />
     </div>
 
-    <div v-cloak v-show="!showPreloader" style="border: 2px dashed red; padding: 20px;">
+    <div v-show="!showPreloader" style="border: 2px dashed red; padding: 20px;">
         <RouterView v-slot="{ Component }">
             <component :is="Component" v-if="Component" />
             <div v-else>⚠️ Component failed to load or not found.</div>
