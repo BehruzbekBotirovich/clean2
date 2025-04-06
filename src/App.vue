@@ -1,17 +1,14 @@
 <template>
     <div v-if="showPreloader" class="w-full h-screen m-auto flex flex-col items-center justify-center gap-8">
-        <h1 class="font-roboto text-6xl font-semibold italic text-main">Hunarmand</h1>
-        <div class=" w-[60%] md:w-[40%] lg:w-[30%] h-2.5 md:h-4 mb-4 bg-[#F5F5F5] rounded-full">
-            <div class="h-2.5 md:h-4 bg-main rounded-full animate-progress" style="width: 45%"></div>
-        </div>
+        <loader />
     </div>
-
     <div v-cloak v-show="!showPreloader">
         <RouterView />
     </div>
 </template>
 
 <script setup lang="ts">
+import Loader from './components/Loader.vue';
 import { onMounted, onUnmounted, provide, ref, watchEffect } from 'vue';
 
 const theme = ref<string>(localStorage.getItem('theme') || 'light');
