@@ -40,15 +40,24 @@ import { Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 
+import after1 from '/src/assets/slider/after1.png'
+import before1 from '/src/assets/slider/before1.png'
+import bruschatka from '/src/assets/slider/bruschatka.jpg'
+import carpet from '/src/assets/slider/carpet.jpg'
+import fasad from '/src/assets/slider/fasad.jpg'
+import remont from '/src/assets/slider/remont.jpeg'
+import home from '/src/assets/slider/home.jpeg'
+import sofa from '/src/assets/slider/sofa.jpg'
+
 const images = [
-    '/src/assets/slider/after1.png',
-    '/src/assets/slider/before1.png',
-    '/src/assets/slider/bruschatka.jpg',
-    '/src/assets/slider/carpet.jpg',
-    '/src/assets/slider/fasad.jpg',
-    '/src/assets/slider/remont.jpeg',
-    '/src/assets/slider/home.jpeg',
-    '/src/assets/slider/sofa.jpg',
+    after1,
+    before1,
+    bruschatka,
+    carpet,
+    fasad,
+    remont,
+    home,
+    sofa
 ]
 </script>
 

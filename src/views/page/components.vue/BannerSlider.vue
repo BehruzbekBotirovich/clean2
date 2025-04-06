@@ -38,7 +38,8 @@
             <div>
                 <h3 class="text-6xl text-maingreen font-morice">Чистота в квартире </h3>
                 <h3 class="text-6xl font-morice mb-4">- наша забота </h3>
-                <p class="text-2xl"><span class="font-semibold">BioClean</span> - кампания, предоставляющая услуги по уборке и поддержанию чистоты в
+                <p class="text-2xl"><span class="font-semibold">BioClean</span> - кампания, предоставляющая услуги по
+                    уборке и поддержанию чистоты в
                     помещениях различного назначения.</p>
             </div>
         </div>
@@ -61,12 +62,12 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Thumbs } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/thumbs';
-
+import home from '/src/assets/images/home.webp'
 // Массив изображений
 const slides = [
-    { image: '/src/assets/images/home.webp' },
-    { image: '/src/assets/images/home.webp' },
-    { image: '/src/assets/images/home.webp' }
+    { image: home },
+    { image: home },
+    { image: home }
 ];
 
 // Хранение активных слайдеров
