@@ -2,7 +2,7 @@
     <div v-if="showPreloader" class="w-full h-screen m-auto flex flex-col items-center justify-center gap-8">
         <loader />
     </div>
-    <div  v-show="!showPreloader">
+    <div v-show="!showPreloader">
         <RouterView />
     </div>
 </template>
@@ -33,7 +33,7 @@ async function processPreloader() {
             clearTimeout(id);
             showPreloader.value = false;
             resolve(true);
-        }, 800);
+        }, 2000);
     });
 }
 
