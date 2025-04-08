@@ -4,7 +4,7 @@
     <services-cards />
     <image-slider />
     <comment-page />
-    <!-- <clients-view /> -->
+    <videos-view />
     <call-form />
     <faq-part />
     <map-view />
@@ -17,7 +17,7 @@ import BannerSlider from './components.vue/BannerSlider.vue';
 import ServicesCards from './components.vue/ServicesCards.vue';
 import ImageSlider from './components.vue/ImageSlider.vue';
 import CommentPage from './components.vue/CommentPage.vue';
-import ClientsView from './components.vue/ClientsView.vue';
+import VideosView from './components.vue/VideosView.vue';
 import FaqPart from './components.vue/FaqPart.vue';
 import MapView from './components.vue/MapView.vue';
 import CallForm from './components.vue/CallForm.vue';

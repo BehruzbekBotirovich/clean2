@@ -1,5 +1,5 @@
 <template>
-    <div class="py-12 w-full max-w-6xl mx-auto">
+    <div class="w-full max-w-6xl mx-auto">
         <h2 class="text-3xl font-morice  text-center mb-4" v-html="t('works_gallery')">
         </h2>
         <swiper :modules="[Navigation]" :slides-per-view="1.8" centeredSlides :space-between="30" navigation loop

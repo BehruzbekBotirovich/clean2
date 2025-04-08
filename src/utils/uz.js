@@ -6,6 +6,8 @@ export const uz = {
     write_us: "Bizga yozing",
     comment_title: '<span class="text-maingreen">Bizning  hizmat</span> haqida fikrlar</h3>',
     commment_subtitle: "Bizga minnatdorchilik izohlari yoziladi",
+    videos_title: '<span class="text-maingreen">Bizning </span> mijozlarga servisimiz</h3>',
+    videos_subtitle: "Ular mamnun - biz ham",
     menu: {
         title: "Menyu",
         home: "Bosh sahifa",

@@ -6,8 +6,8 @@ export const ru = {
     write_us: "Написать нам",
     comment_title: '<span class="text-maingreen">ОТЗЫВЫ</span> О НАШЕЙ РАБОТЕ</h3>',
     commment_subtitle: "Нам пишут слова благодарности.",
-    video_title: '<span class="text-maingreen">ОТЗЫВЫ</span> О НАШЕЙ РАБОТЕ</h3>',
-    video_subtitle: "Нам пишут слова благодарности.",
+    videos_title: '<span class="text-maingreen">Облако</span> нашых работ</h3>',
+    videos_subtitle: "Они рады и мы рады!",
     menu: {
         title: "Меню",
         home: "Главная",
