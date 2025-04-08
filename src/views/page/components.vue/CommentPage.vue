@@ -1,7 +1,7 @@
 <template>
     <div class="container py-16">
-        <h3 class="text-4xl text-center font-morice "><span class="text-maingreen">ОТЗЫВЫ</span> О НАШЕЙ РАБОТЕ</h3>
-        <p class="text-lg text-center">Нам пишут слова благодарности.</p>
+        <h3 class="text-4xl text-center font-morice" v-html="$t('comment_title')"></h3>
+        <p class="text-lg text-center">{{ $t('comment_subtitle') }}</p>
         <div class="relative w-full mt-10">
             <Swiper :modules="[Navigation]" :slides-per-view="1.5" :space-between="60" :breakpoints="{
                 640: { slidesPerView: 2.5 },
@@ -15,7 +15,7 @@
                         </div>
                         <div class="" style="width: calc(100% - 5rem);">
                             <h3 class="text-xl font-semibold text-left">{{ review.title }}</h3>
-                            <p class="text-gray-700 text-sm text-left">{{ review.description }}</p>
+                            <p class="text-gray-700 text-sm text-left">{{ $t(`reviews.${review.id}.description`) }}</p>
                         </div>
                     </div>
                 </SwiperSlide>

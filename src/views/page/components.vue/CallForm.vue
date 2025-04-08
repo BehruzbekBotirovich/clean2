@@ -2,30 +2,30 @@
     <div class="relative">
         <div class="wrapper-img"></div>
         <div class="container py-16 relative z-10">
-            <h3 class="font-morice text-4xl text-center">
-                <span class="text-maingreen">Стало интересно!? </span><br>
-                Оставьте заявку
+            <h3 class="font-morice text-4xl uppercase text-center">
+                <span class="text-maingreen">{{ $t('form.inquiry_interest') }}</span><br>
+                {{ $t('form.leave_request') }}
             </h3>
             <form @submit.prevent="submitForm" class="grid grid-cols-3 gap-10 mt-12 container">
                 <div class="mb-4">
-                    <input v-model="name" id="name" type="text" placeholder="Иван Иванов"
+                    <input v-model="name" id="name" type="text" :placeholder="$t('form.placeholder_name')"
                         class="w-full p-6 text-lg bg-maingray/40 border-2 border-transparent rounded-xl outline-none focus:border-maingreen"
                         required />
                 </div>
 
                 <div class="mb-4">
-                    <input v-model="phone" id="phone" type="tel" placeholder="+998 (__)-___-__-__" @input="formatPhone"
+                    <input v-model="phone" id="phone" type="tel" :placeholder="$t('form.placeholder_phone')"
+                        @input="formatPhone"
                         class="w-full p-6 text-lg bg-maingray/40 border-2 border-transparent rounded-xl outline-none focus:border-maingreen"
                         required />
                 </div>
 
                 <button type="submit" class="w-full h-fit px-8 py-6 bg-green-gradient text-white font-bold rounded-xl">
-                    Оставить заявку
+                    {{ $t('form.submit_request') }}
                 </button>
             </form>
         </div>
     </div>
-
 </template>
 
 <script setup>

@@ -122,7 +122,6 @@
 
 
                     <div>
-                        <p class="font-morice text-2xl"> 998 (99) 806 20 10</p>
                         <p class="font-morice text-2xl"> 998 (78) 113 87 87</p>
                     </div>
 

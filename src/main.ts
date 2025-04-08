@@ -7,12 +7,12 @@ import '@/assets/styles/main.css';
 import App from './App.vue';
 import router from './router';
 import VueApexCharts from "vue3-apexcharts";
-import i18n from '/src/utils/i18n.js'; // импортируем файл с конфигурацией i18n
+import i18nFactory from '/src/utils/i18n.js'; 
 
 
 const app = createApp(App)
 
-app.use(i18n); // подключаем i18n
+app.use(i18nFactory); 
 app.use(createPinia())
 app.use(router)
 app.use(VueApexCharts);

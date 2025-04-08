@@ -1,7 +1,7 @@
 <template>
     <div class="container ">
         <div class="flex gap-4">
-            <div class="my-6 w-[340px] space-y-6">
+            <div class="my-6 w-[20rem] space-y-6">
                 <div class="flex gap-2 items-center ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 32 32">
                         <path fill="#AED287"
@@ -10,25 +10,24 @@
                     <div>
                         <h3 class="text-2xl text-graydark font-semibold">Bio<span class="text-maingreen">Clean</span>
                         </h3>
-                        <div class="text-graydark text-xs">Клининговая компания в Ташкенте</div>
+                        <div class="text-graydark text-xs text-nowrap">{{ $t('company_title') }}</div>
                     </div>
                 </div>
 
-                <ul class="">
-                    <li class="font-semibold">Главная </li>
-                    <li class="text-gray-400">Наши работы</li>
-                    <li class="text-gray-400">Услуги</li>
-                    <li class="text-gray-400">Преимущества</li>
-                    <li class="text-gray-400">Контакты</li>
+                <ul>
+                    <li class="font-semibold">{{ $t('menu.home') }}</li>
+                    <li class="text-gray-400">{{ $t('menu.works') }}</li>
+                    <li class="text-gray-400">{{ $t('menu.services') }}</li>
+                    <li class="text-gray-400">{{ $t('menu.advantages') }}</li>
+                    <li class="text-gray-400">{{ $t('menu.contacts') }}</li>
                 </ul>
 
                 <div>
-                    <p class="font-morice text-2xl"> 998 (99) 806 20 10</p>
                     <p class="font-morice text-2xl"> 998 (78) 113 87 87</p>
                 </div>
 
                 <div>
-                    <h3>Написать нам</h3>
+                    <h3>{{ $t('write_us') }}</h3>
                     <div class="social-links mt-2">
                         <a href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.25rem" height="1.25rem"
@@ -78,9 +77,9 @@
                                 d="M3.524 8.857a8.288 8.288 0 0 1 8.26-7.607h.432a8.288 8.288 0 0 1 8.26 7.607a8.944 8.944 0 0 1-1.99 6.396l-4.793 5.861a2.187 2.187 0 0 1-3.386 0l-4.793-5.861a8.943 8.943 0 0 1-1.99-6.396m8.26-6.107A6.788 6.788 0 0 0 5.02 8.98a7.443 7.443 0 0 0 1.656 5.323l4.793 5.862a.687.687 0 0 0 1.064 0l4.793-5.862A7.443 7.443 0 0 0 18.98 8.98a6.788 6.788 0 0 0-6.765-6.23z" />
                         </g>
                     </svg>
-                    Ташкент Мирзо-Улугбекский район Улица Навнихол 3
+                    Tashkent, Mirzo Ulugbek Navnihol str 3
                 </p>
-                <button class="btn btn-ghost text-maingreen text-shadow-md">Заказать звонок</button>
+                <button class="btn btn-ghost text-maingreen text-shadow-md">{{ $t('order') }}</button>
             </div>
         </div>
     </div>
