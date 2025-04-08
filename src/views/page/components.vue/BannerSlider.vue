@@ -36,20 +36,16 @@
 
         <div class="w-1/2 flex items-center px-20">
             <div>
-                <h3 class="text-6xl text-maingreen font-morice">Чистота в квартире </h3>
-                <h3 class="text-6xl font-morice mb-4">- наша забота </h3>
-                <p class="text-2xl"><span class="font-semibold">BioClean</span> - кампания, предоставляющая услуги по
-                    уборке и поддержанию чистоты в
-                    помещениях различного назначения.</p>
+                <h3 class="text-6xl mb-4 font-morice" v-html="t('banner_slider.clear_flat')"> </h3>
+                <p class="text-xl text-black/50" v-html="t('banner_slider.title')"></p>
             </div>
         </div>
     </div>
 
     <div class="bg__home">
         <div class="container py-32">
-            <h3 class="text-5xl text-white font-morice text-center relative uppercase ">20 ЛЕТ ПОМОГАЕМ ВАМ И ВАШЕМУ
-                ДОМУ
-                <br>БЫТЬ ЧИСТЫМИ И ОПРЯТНЫМИ
+            <h3 class="text-5xl text-white font-morice text-center relative uppercase"
+                v-html="t('banner_slider.logan')">
             </h3>
         </div>
     </div>
@@ -63,6 +59,8 @@ import { Thumbs } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/thumbs';
 import home from '/src/assets/images/home.webp'
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 // Массив изображений
 const slides = [
     { image: home },

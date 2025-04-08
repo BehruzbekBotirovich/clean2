@@ -12,24 +12,21 @@
                     <div>
                         <h3 class="text-3xl text-graydark font-semibold">Bio<span class="text-maingreen">Clean</span>
                         </h3>
-                        <div class="text-graydark text-sm">Клининговая компания в Ташкенте</div>
+                        <div class="text-graydark text-sm">{{ t('company_title') }}</div>
                     </div>
                 </div>
 
                 <div class="mt-20">
                     <div class="text-5xl font-morice text-graydark uppercase">
-                        <p> <span class="text-maingreen">Уборка</span> Квартир, </p>
-                        <p> Домов и офисов</p>
+                        <p> <span class="text-maingreen">{{ t('cleaning') }}</span> {{ t('banner.flat') }} </p>
+                        <p> {{ t('banner.offices') }}</p>
                     </div>
-                    <p class="py-8 w-2/3">
-                        <span class="text-maingreen">Гарантируем </span>
-                        чистоту и безопасность вашего дома и вашей семьи
-                    </p>
+                    <p class="py-8 w-2/3" v-html="t('banner.garanty')"> </p>
 
                     <button class="py-4 px-8 rounded-2xl mb-3  text-white text-lg  gradient">
-                        Заказать Уборку
+                        {{ t('order') }}
                     </button>
-                    <p><span class="text-gray-400">*При первом заказе </span> скидка 10%</p>
+                    <p><span class="text-gray-400">{{ t('banner.discount') }} </span> {{ t('banner.discount_per') }}</p>
                 </div>
             </div>
             <!-- col2 -->
@@ -41,7 +38,7 @@
                     }" @slideChange="onSlideChange" class="rounded-lg  h-full">
                         <SwiperSlide>
                             <div class="bg-green-slide rounded-b-[600px] h-full overflow-hidden">
-                                <img src="/src/assets/images/cleanerslide.png"
+                                <img src="/src/assets/images/cleaner5.png"
                                     class="w-auto h-full object-cover rounded-lg" />
                             </div>
                         </SwiperSlide>
@@ -53,13 +50,13 @@
                         </SwiperSlide>
                         <SwiperSlide class="overflow-visible">
                             <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
-                                <img src="/src/assets/images/cleaner2.png"
+                                <img src="/src/assets/images/cleaner4.png"
                                     class="w-auto h-full object-cover scale-110 rounded-lg" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide class="overflow-visible">
                             <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
-                                <img src="/src/assets/images/cleaner3.png"
+                                <img src="/src/assets/images/cleanerslide.png"
                                     class="w-auto h-full object-cover scale-110 rounded-lg" />
                             </div>
                         </SwiperSlide>
@@ -68,26 +65,26 @@
 
                 <Transition>
                     <h3 v-if="activeIndex == 0" class="absolute bottom-6 -left-2/3">
-                        <div>Немецкая оборудования </div>
-                        <div>Профессионалыние клинеры</div>
+                        <div>{{ t('banner.german_tools') }} </div>
+                        <div>{{ t('banner.profy_cleaner') }}</div>
                     </h3>
 
                     <h3 v-else class="absolute bottom-6 -left-2/3">
-                        <div>Эффективный сервис для </div>
-                        <div>избавления от вредителей</div>
+                        <div>{{ t('banner.effectiv_service') }} </div>
+                        <div>{{ t('banner.bug_fix') }}</div>
                     </h3>
 
                 </Transition>
 
                 <Transition>
                     <h3 v-if="activeIndex == 0" class="absolute bottom-6 -right-2/3">
-                        <div>Уборка от пола до полатка </div>
-                        <div>по выгодним ценам</div>
+                        <div>{{ t('banner.cleaning_all') }}</div>
+                        <div>{{ t('banner.price') }}</div>
                     </h3>
 
                     <h3 v-else class="absolute bottom-6 -right-2/3">
-                        <div>Абсолютно безопасно для </div>
-                        <div>детей и домашних животных</div>
+                        <div>{{ t('banner.animal_free') }} </div>
+                        <div>{{ t('banner.safe') }}</div>
                     </h3>
                 </Transition>
 
@@ -97,28 +94,32 @@
             </div>
             <!-- col3 -->
             <div class="col-span-1 mt-8">
-                <div class="flex gap-2 items-center">
-                    <svg class="text-maingreen" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2.5rem"
-                        viewBox="0 0 24 24">
-                        <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
-                            <path
-                                d="M7.25 10a4.75 4.75 0 1 1 9.5 0a4.75 4.75 0 0 1-9.5 0M12 6.75a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 0 0 0-6.5" />
-                            <path
-                                d="M3.524 8.857a8.288 8.288 0 0 1 8.26-7.607h.432a8.288 8.288 0 0 1 8.26 7.607a8.944 8.944 0 0 1-1.99 6.396l-4.793 5.861a2.187 2.187 0 0 1-3.386 0l-4.793-5.861a8.943 8.943 0 0 1-1.99-6.396m8.26-6.107A6.788 6.788 0 0 0 5.02 8.98a7.443 7.443 0 0 0 1.656 5.323l4.793 5.862a.687.687 0 0 0 1.064 0l4.793-5.862A7.443 7.443 0 0 0 18.98 8.98a6.788 6.788 0 0 0-6.765-6.23z" />
-                        </g>
-                    </svg>
-                    <h3 class="font-semibold">г.Ташкент Узбекистан </h3>
+                <div class="flex justify-between">
+                    <div class="flex gap-2 items-center">
+                        <svg class="text-maingreen" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2.5rem"
+                            viewBox="0 0 24 24">
+                            <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M7.25 10a4.75 4.75 0 1 1 9.5 0a4.75 4.75 0 0 1-9.5 0M12 6.75a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 0 0 0-6.5" />
+                                <path
+                                    d="M3.524 8.857a8.288 8.288 0 0 1 8.26-7.607h.432a8.288 8.288 0 0 1 8.26 7.607a8.944 8.944 0 0 1-1.99 6.396l-4.793 5.861a2.187 2.187 0 0 1-3.386 0l-4.793-5.861a8.943 8.943 0 0 1-1.99-6.396m8.26-6.107A6.788 6.788 0 0 0 5.02 8.98a7.443 7.443 0 0 0 1.656 5.323l4.793 5.862a.687.687 0 0 0 1.064 0l4.793-5.862A7.443 7.443 0 0 0 18.98 8.98a6.788 6.788 0 0 0-6.765-6.23z" />
+                            </g>
+                        </svg>
+                        <h3 class="font-semibold">{{ t('place') }}</h3>
+                    </div>
+                    <language-picker-component />
                 </div>
 
                 <div class="mt-20 space-y-5">
-                    <h3 class="text-maingreen text-5xl font-morice mb-6">Меню</h3>
-                    <ul class="">
-                        <li class="font-semibold">Главная </li>
-                        <li class="text-gray-400">Наши работы</li>
-                        <li class="text-gray-400">Услуги</li>
-                        <li class="text-gray-400">Преимущества</li>
-                        <li class="text-gray-400">Контакты</li>
+                    <h3 class="text-maingreen text-5xl font-morice mb-6">{{ t('menu.title') }}</h3>
+                    <ul>
+                        <li class="font-semibold">{{ t('menu.home') }}</li>
+                        <li class="text-gray-400">{{ t('menu.works') }}</li>
+                        <li class="text-gray-400">{{ t('menu.services') }}</li>
+                        <li class="text-gray-400">{{ t('menu.advantages') }}</li>
+                        <li class="text-gray-400">{{ t('menu.contacts') }}</li>
                     </ul>
+
 
                     <div>
                         <p class="font-morice text-2xl"> 998 (99) 806 20 10</p>
@@ -126,7 +127,7 @@
                     </div>
 
                     <div>
-                        <h3>Написать нам</h3>
+                        <h3>{{ t('write_us') }}</h3>
                         <div class="social-links mt-2">
                             <a href="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1.25rem" height="1.25rem"
@@ -165,33 +166,40 @@
         <div class="px-32  flex  justify-between translate-y-24">
             <div class="servise-card">
                 <div class="servise__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                        <path fill="currentColor"
-                            d="M18.963 4.188a.5.5 0 0 1 .705-.08l1.08.866L16.799 10h2.544l2.968-3.776l2.504 2.006a.5.5 0 0 1 .066.717L23.973 10h2.614a2.5 2.5 0 0 0-.522-3.331l-5.147-4.122a2.5 2.5 0 0 0-3.522.399L11.809 10h2.551zM21 19a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2zM6 7a3 3 0 0 0-3 3v14.5A4.5 4.5 0 0 0 7.5 29h17a4.5 4.5 0 0 0 4.5-4.5v-9a4.5 4.5 0 0 0-4.5-4.5H6a1 1 0 1 1 0-2h4.58l1.596-2zM5 24.5V12.83c.313.11.65.17 1 .17h18.5a2.5 2.5 0 0 1 2.5 2.5v9a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 5 24.5" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 48 48">
+                        <g fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M22.062 25.602L11.33 5.416a1 1 0 1 1 1.766-.939l10.733 20.186l1.522-.81a4 4 0 0 1 5.41 1.655l.648 1.218l6.869 10.055l-14.249 7.576l-4.495-11.318l-.647-1.218a4 4 0 0 1 1.654-5.41zm-.583 2.575l4.81-2.557a2 2 0 0 1 2.705.827l.648 1.217l-8.343 4.436l-.647-1.218a2 2 0 0 1 .827-2.705m.83 6.432l2.753 6.933l1.834-.975l-2.165-4.215l1.78-.914l2.152 4.19l6.702-3.564l-4.208-6.16z"
+                                clip-rule="evenodd" />
+                            <path
+                                d="M16.36 35.231a1 1 0 0 1 1.28 1.537l-.001.001l-.002.002l-.003.002l-.01.008l-.03.025l-.103.079c-.087.065-.21.154-.367.26c-.315.21-.77.484-1.344.758A11.149 11.149 0 0 1 11 39a1 1 0 1 1 0-2a9.15 9.15 0 0 0 3.92-.903a8.836 8.836 0 0 0 1.094-.617a5.93 5.93 0 0 0 .337-.24l.01-.01zm3.195 6.601a1 1 0 0 0-1.11-1.664l-.002.002l-.02.012l-.086.055a14.28 14.28 0 0 1-1.618.85c-1.07.474-2.42.913-3.719.913a1 1 0 1 0 0 2c1.702 0 3.35-.561 4.531-1.086a16.244 16.244 0 0 0 1.863-.979a8.43 8.43 0 0 0 .114-.072l.032-.021l.01-.006z" />
+                        </g>
                     </svg>
                 </div>
-                <h3 class="text-lg mb-1 font-semibold">Все выди работ</h3>
-                <p class="text-gray-400">Бемся за любие выди <br>уборки на любых обектах</p>
+                <h3 class="text-lg mb-1 font-semibold">{{ t('banner.all_work') }}</h3>
+                <p class="text-gray-400" v-html="t('banner.cleaning_description')"></p>
             </div>
             <div class="servise-card">
                 <div class="servise__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 1024 1024">
                         <path fill="currentColor"
-                            d="M18.963 4.188a.5.5 0 0 1 .705-.08l1.08.866L16.799 10h2.544l2.968-3.776l2.504 2.006a.5.5 0 0 1 .066.717L23.973 10h2.614a2.5 2.5 0 0 0-.522-3.331l-5.147-4.122a2.5 2.5 0 0 0-3.522.399L11.809 10h2.551zM21 19a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2zM6 7a3 3 0 0 0-3 3v14.5A4.5 4.5 0 0 0 7.5 29h17a4.5 4.5 0 0 0 4.5-4.5v-9a4.5 4.5 0 0 0-4.5-4.5H6a1 1 0 1 1 0-2h4.58l1.596-2zM5 24.5V12.83c.313.11.65.17 1 .17h18.5a2.5 2.5 0 0 1 2.5 2.5v9a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 5 24.5" />
+                            d="M945 412H689c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h256c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8M811 548H689c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h122c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8M477.3 322.5H434c-6.2 0-11.2 5-11.2 11.2v248c0 3.6 1.7 6.9 4.6 9l148.9 108.6c5 3.6 12 2.6 15.6-2.4l25.7-35.1v-.1c3.6-5 2.5-12-2.5-15.6l-126.7-91.6V333.7c.1-6.2-5-11.2-11.1-11.2" />
+                        <path fill="currentColor"
+                            d="M804.8 673.9H747c-5.6 0-10.9 2.9-13.9 7.7c-12.7 20.1-27.5 38.7-44.5 55.7c-29.3 29.3-63.4 52.3-101.3 68.3c-39.3 16.6-81 25-124 25c-43.1 0-84.8-8.4-124-25c-37.9-16-72-39-101.3-68.3s-52.3-63.4-68.3-101.3c-16.6-39.2-25-80.9-25-124c0-43.1 8.4-84.7 25-124c16-37.9 39-72 68.3-101.3c29.3-29.3 63.4-52.3 101.3-68.3c39.2-16.6 81-25 124-25c43.1 0 84.8 8.4 124 25c37.9 16 72 39 101.3 68.3c17 17 31.8 35.6 44.5 55.7c3 4.8 8.3 7.7 13.9 7.7h57.8c6.9 0 11.3-7.2 8.2-13.3c-65.2-129.7-197.4-214-345-215.7c-216.1-2.7-395.6 174.2-396 390.1C71.6 727.5 246.9 903 463.2 903c149.5 0 283.9-84.6 349.8-215.8c3.1-6.1-1.4-13.3-8.2-13.3" />
                     </svg>
                 </div>
-                <h3 class="text-lg mb-1 font-semibold">Все выди работ</h3>
-                <p class="text-gray-400">Бемся за любие выди <br> уборки на любых обектах</p>
+                <h3 class="text-lg mb-1 font-semibold">{{ t('banner.all_time') }}</h3>
+                <p class="text-gray-400" v-html="t('banner.cleaning_description2')"></p>
             </div>
             <div class="servise-card">
                 <div class="servise__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 32 32">
                         <path fill="currentColor"
                             d="M18.963 4.188a.5.5 0 0 1 .705-.08l1.08.866L16.799 10h2.544l2.968-3.776l2.504 2.006a.5.5 0 0 1 .066.717L23.973 10h2.614a2.5 2.5 0 0 0-.522-3.331l-5.147-4.122a2.5 2.5 0 0 0-3.522.399L11.809 10h2.551zM21 19a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2zM6 7a3 3 0 0 0-3 3v14.5A4.5 4.5 0 0 0 7.5 29h17a4.5 4.5 0 0 0 4.5-4.5v-9a4.5 4.5 0 0 0-4.5-4.5H6a1 1 0 1 1 0-2h4.58l1.596-2zM5 24.5V12.83c.313.11.65.17 1 .17h18.5a2.5 2.5 0 0 1 2.5 2.5v9a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 5 24.5" />
                     </svg>
                 </div>
-                <h3 class="text-lg mb-1 font-semibold">Все выди работ</h3>
-                <p class="text-gray-400">Бемся за любие выди <br> уборки на любых обектах</p>
+                <h3 class="text-lg mb-1 font-semibold">{{ t('banner.payafter') }}</h3>
+                <p class="text-gray-400" v-html="t('banner.cleaning_description3')"></p>
             </div>
         </div>
     </div>
@@ -205,6 +213,9 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
+import LanguagePickerComponent from '@/components/LanguagePickerComponent.vue';
 
 const activeIndex = ref()
 const onSlideChange = (swiper) => {

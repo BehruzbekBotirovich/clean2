@@ -1,72 +1,62 @@
 <template>
     <div class="container py-24">
-        <h3 class="text-4xl font-morice uppercase text-center"> <span class="text-maingreen">Выди </span> наших услуг
+        <h3 class="text-4xl font-morice uppercase text-center" v-html="t('services_title')">
         </h3>
         <div class="services-wrapper grid grid-cols-3 gap-2 my-10">
-            <div class="servise__card  shadow-lg ">
+            <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/genuborka.jpg" alt="">
-                <div class="absolute left-0 bottom-0 w-full  p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2">Генеральная уборка</h3>
-                    <p class="text-center text-sm hidden hover:block">Генеральная уборка - это комплексная уборка,
-                        которая включает в себя
-                        все аспекты чистоты и порядка в вашем доме или офисе.</p>
+                <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('general_cleaning') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('general_cleaning_desc') }}</p>
                 </div>
             </div>
 
-            <div class="servise__card  shadow-lg ">
+            <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/remont.jpg" alt="">
-                <div class="absolute left-0 bottom-0 w-full  p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2">Уборка после ремонта</h3>
-                    <p class="text-center text-sm hidden hover:block">Уборка после ремонта - профессиональная очистка
-                        помещений от
-                        строительной пыли, остатков материалов и загрязнений</p>
+                <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('after_repair') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('after_repair_desc') }}</p>
                 </div>
             </div>
 
-            <div class="servise__card  shadow-lg ">
+            <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/fasad.jpg" alt="">
-                <div class="absolute left-0 bottom-0 w-full  p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2">Мойка фасадов </h3>
-                    <p class="text-center text-sm hidden hover:block">
-                        Очистка внешних стен зданий от загрязнений, пыли и грязи
-                    </p>
+                <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('facade_washing') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('facade_washing_desc') }}</p>
                 </div>
             </div>
 
-            <div class="servise__card shadow-lg ">
+            <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/mebel.webp" alt="">
-                <div class="absolute left-0 bottom-0 w-full  p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2"> Химчистка ковров и мебели</h3>
-                    <p class="text-center text-sm hidden hover:block">
-                        Глубокая чистка, устранение пятен и неприятных запахов. </p>
+                <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('upholstery_cleaning') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('upholstery_cleaning_desc') }}</p>
                 </div>
             </div>
 
-            <div class="servise__card  shadow-lg ">
+            <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/bruschatka.jpg" alt="">
-                <div class="absolute left-0 bottom-0 w-full  p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2"> Химчистка брюшчатки</h3>
-                    <p class="text-center text-sm hidden hover:block">
-                        Удаление грязи, налета и плесени с плитки глубокая чистка, устранение пятен. </p>
+                <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('brick_cleaning') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('brick_cleaning_desc') }}</p>
                 </div>
             </div>
 
-            <div class="servise__card  shadow-lg ">
+            <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/dizinuborka.webp" alt="">
-                <div class="absolute left-0 bottom-0 w-full  p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2"> Уборка после дезинфекции </h3>
-                    <p class="text-center text-sm hidden hover:block">
-                        Обработка помещений от вирусов, бактерий и аллергенов. </p>
+                <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('disinfection_cleaning') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('disinfection_cleaning_desc') }}</p>
                 </div>
             </div>
         </div>
     </div>
-
 </template>
-
 <script setup>
 import { ref } from 'vue';
-
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <style scoped>
