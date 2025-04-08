@@ -48,19 +48,25 @@ const messages = {
             clear_flat: ' <span class="text-maingreen">Чистота в квартире  </span > <br> - наша забота'
         },
         // serives cards
-        services_title: '<span class="text-maingreen">Выди </span> наших услуг',
-        general_cleaning: "Генеральная уборка",
-        after_repair: "Уборка после ремонта",
-        facade_washing: "Мойка фасадов",
-        upholstery_cleaning: "Химчистка ковров и мебели",
-        brick_cleaning: "Химчистка брюшчатки",
-        disinfection_cleaning: "Уборка после дезинфекции",
-        general_cleaning_desc: "Генеральная уборка - это комплексная уборка, которая включает в себя все аспекты чистоты и порядка в вашем доме или офисе.",
-        after_repair_desc: "Уборка после ремонта - профессиональная очистка помещений от строительной пыли, остатков материалов и загрязнений.",
-        facade_washing_desc: "Очистка внешних стен зданий от загрязнений, пыли и грязи.",
-        upholstery_cleaning_desc: "Глубокая чистка, устранение пятен и неприятных запахов.",
-        brick_cleaning_desc: "Удаление грязи, налета и плесени с плитки, глубокая чистка, устранение пятен.",
-        disinfection_cleaning_desc: "Обработка помещений от вирусов, бактерий и аллергенов."
+        cards: {
+            services_title: '<span class="text-maingreen">Выди </span> наших услуг',
+            general_cleaning: "Генеральная уборка",
+            after_repair: "Уборка после ремонта",
+            facade_washing: "Мойка фасадов",
+            upholstery_cleaning: "Химчистка ковров и мебели",
+            brick_cleaning: "Химчистка брюшчатки",
+            disinfection_cleaning: "Уборка после дезинфекции",
+            general_cleaning_desc: "Генеральная уборка - это комплексная уборка, которая включает в себя все аспекты чистоты и порядка в вашем доме или офисе.",
+            after_repair_desc: "Уборка после ремонта - профессиональная очистка помещений от строительной пыли, остатков материалов и загрязнений.",
+            facade_washing_desc: "Очистка внешних стен зданий от загрязнений, пыли и грязи.",
+            upholstery_cleaning_desc: "Глубокая чистка, устранение пятен и неприятных запахов.",
+            brick_cleaning_desc: "Удаление грязи, налета и плесени с плитки, глубокая чистка, устранение пятен.",
+            disinfection_cleaning_desc: "Обработка помещений от вирусов, бактерий и аллергенов."
+
+        },
+
+        works_gallery: '<span class="text-maingreen">ГАЛЕРЕЯ</span> НАШИХ РАБОТ',
+
     },
 
     uz: {
@@ -104,19 +110,22 @@ const messages = {
             clear_flat: '<span class="text-maingreen">Kvartirada tozalik</span> <br> — bizning g‘amxo‘rligimiz'
         },
         // serives cards
-        services_title: "<span class='text-maingreen'>Xizmatlarimiz  </span> turlari",
-        general_cleaning: "General tozalash",
-        after_repair: "Ta'mirdan keyingi tozalash",
-        facade_washing: "Fasadlarni yuvish",
-        upholstery_cleaning: "Gilamlar va mebellarni kimyoviy tozalash",
-        brick_cleaning: "Bruschatkani kimyoviy tozalash",
-        disinfection_cleaning: "Dezinfektsiyadan keyingi tozalash",
-        general_cleaning_desc: "General tozalash - bu uy yoki ofisingizdagi barcha tozalik va tartibni o'z ichiga olgan kompleks tozalash.",
-        after_repair_desc: "Ta'mirdan keyingi tozalash - bu xonalarni qurilish changi va material qoldiqlardan tozalash.",
-        facade_washing_desc: "Bino devorlarining tashqi qismini tozalash.",
-        upholstery_cleaning_desc: "Chuqur tozalash, dog'lar va yoqimsiz hidlarni bartaraf etish.",
-        brick_cleaning_desc: "Plyonkalarni tozalash, chang va chiriyotganlarni bartaraf etish.",
-        disinfection_cleaning_desc: "Xonalarni viruslar, bakteriyalar va allergenlardan tozalash."
+        cards: {
+            services_title: "<span class='text-maingreen'>Xizmatlarimiz  </span> turlari",
+            general_cleaning: "General tozalash",
+            after_repair: "Ta'mirdan keyingi tozalash",
+            facade_washing: "Fasadlarni yuvish",
+            upholstery_cleaning: "Gilamlar va mebellarni kimyoviy tozalash",
+            brick_cleaning: "Bruschatkani kimyoviy tozalash",
+            disinfection_cleaning: "Dezinfektsiyadan keyingi tozalash",
+            general_cleaning_desc: "General tozalash - bu uy yoki ofisingizdagi barcha tozalik va tartibni o'z ichiga olgan kompleks tozalash.",
+            after_repair_desc: "Ta'mirdan keyingi tozalash - bu xonalarni qurilish changi va material qoldiqlardan tozalash.",
+            facade_washing_desc: "Bino devorlarining tashqi qismini tozalash.",
+            upholstery_cleaning_desc: "Chuqur tozalash, dog'lar va yoqimsiz hidlarni bartaraf etish.",
+            brick_cleaning_desc: "Plyonkalarni tozalash, chang va chiriyotganlarni bartaraf etish.",
+            disinfection_cleaning_desc: "Xonalarni viruslar, bakteriyalar va allergenlardan tozalash."
+        },
+        works_gallery: '<span class="text-maingreen">BIZNING ISHLAR</span> GALLEREYASI',
 
     },
 
@@ -162,19 +171,22 @@ const messages = {
         },
 
         // serives cards
-        services_title: "Xizmatlarimiz turlari",
-        general_cleaning: "General tozalash",
-        after_repair: "Ta'mirdan keyingi tozalash",
-        facade_washing: "Fasadlarni yuvish",
-        upholstery_cleaning: "Koverlar va mebellarni kimyoviy tozalash",
-        brick_cleaning: "Bruschatkani kimyoviy tozalash",
-        disinfection_cleaning: "Dezinfektsiyadan keyingi tozalash",
-        general_cleaning_desc: "General tozalash - bu uy yoki ofisingizdagi barcha tozalik va tartibni o'z ichiga olgan kompleks tozalash.",
-        after_repair_desc: "Ta'mirdan keyingi tozalash - bu xonalarni qurilish changi va material qoldiqlardan tozalash.",
-        facade_washing_desc: "Bino devorlarining tashqi qismini tozalash.",
-        upholstery_cleaning_desc: "Chuqur tozalash, dog'lar va yoqimsiz hidlarni bartaraf etish.",
-        brick_cleaning_desc: "Plyonkalarni tozalash, chang va chiriyotganlarni bartaraf etish.",
-        disinfection_cleaning_desc: "Xonalarni viruslar, bakteriyalar va allergenlardan tozalash."
+        cards: {
+            services_title: "Xizmatlarimiz turlari",
+            general_cleaning: "General tozalash",
+            after_repair: "Ta'mirdan keyingi tozalash",
+            facade_washing: "Fasadlarni yuvish",
+            upholstery_cleaning: "Koverlar va mebellarni kimyoviy tozalash",
+            brick_cleaning: "Bruschatkani kimyoviy tozalash",
+            disinfection_cleaning: "Dezinfektsiyadan keyingi tozalash",
+            general_cleaning_desc: "General tozalash - bu uy yoki ofisingizdagi barcha tozalik va tartibni o'z ichiga olgan kompleks tozalash.",
+            after_repair_desc: "Ta'mirdan keyingi tozalash - bu xonalarni qurilish changi va material qoldiqlardan tozalash.",
+            facade_washing_desc: "Bino devorlarining tashqi qismini tozalash.",
+            upholstery_cleaning_desc: "Chuqur tozalash, dog'lar va yoqimsiz hidlarni bartaraf etish.",
+            brick_cleaning_desc: "Plyonkalarni tozalash, chang va chiriyotganlarni bartaraf etish.",
+            disinfection_cleaning_desc: "Xonalarni viruslar, bakteriyalar va allergenlardan tozalash."
+        },
+        works_gallery: '<span class="text-maingreen">GALLERY OF</span> OUR WORKS',
 
     }
 

@@ -1,7 +1,6 @@
 <template>
     <div class="py-12 w-full max-w-6xl mx-auto">
-        <h2 class="text-3xl font-morice  text-center mb-4">
-            <span class="text-maingreen">ГАЛЕРЕЯ</span> НАШИХ РАБОТ
+        <h2 class="text-3xl font-morice  text-center mb-4" v-html="t('works_gallery')">
         </h2>
         <swiper :modules="[Navigation]" :slides-per-view="1.8" centeredSlides :space-between="30" navigation loop
             class="overflow-visible">
@@ -39,7 +38,8 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
-
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();    
 import after1 from '/src/assets/slider/after1.png'
 import before1 from '/src/assets/slider/before1.png'
 import bruschatka from '/src/assets/slider/bruschatka.jpg'

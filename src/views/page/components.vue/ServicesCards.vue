@@ -1,53 +1,53 @@
 <template>
     <div class="container py-24">
-        <h3 class="text-4xl font-morice uppercase text-center" v-html="t('services_title')">
+        <h3 class="text-4xl font-morice uppercase text-center" v-html="t('cards.services_title')">
         </h3>
         <div class="services-wrapper grid grid-cols-3 gap-2 my-10">
             <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/genuborka.jpg" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2">{{ t('general_cleaning') }}</h3>
-                    <p class="text-center text-sm hidden hover:block">{{ t('general_cleaning_desc') }}</p>
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('cardsgeneral_cleaning') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('cardsgeneral_cleaning_desc') }}</p>
                 </div>
             </div>
 
             <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/remont.jpg" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2">{{ t('after_repair') }}</h3>
-                    <p class="text-center text-sm hidden hover:block">{{ t('after_repair_desc') }}</p>
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('cardsafter_repair') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('cardsafter_repair_desc') }}</p>
                 </div>
             </div>
 
             <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/fasad.jpg" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2">{{ t('facade_washing') }}</h3>
-                    <p class="text-center text-sm hidden hover:block">{{ t('facade_washing_desc') }}</p>
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('cardsfacade_washing') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('cardsfacade_washing_desc') }}</p>
                 </div>
             </div>
 
             <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/mebel.webp" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2">{{ t('upholstery_cleaning') }}</h3>
-                    <p class="text-center text-sm hidden hover:block">{{ t('upholstery_cleaning_desc') }}</p>
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('cardsupholstery_cleaning') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('cardsupholstery_cleaning_desc') }}</p>
                 </div>
             </div>
 
             <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/bruschatka.jpg" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2">{{ t('brick_cleaning') }}</h3>
-                    <p class="text-center text-sm hidden hover:block">{{ t('brick_cleaning_desc') }}</p>
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('cardsbrick_cleaning') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('cardsbrick_cleaning_desc') }}</p>
                 </div>
             </div>
 
             <div class="servise__card shadow-lg">
                 <img class="aspect-[5/4]" src="/src/assets/images/dizinuborka.webp" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
-                    <h3 class="text-xl font-morice text-center my-2">{{ t('disinfection_cleaning') }}</h3>
-                    <p class="text-center text-sm hidden hover:block">{{ t('disinfection_cleaning_desc') }}</p>
+                    <h3 class="text-xl font-morice text-center my-2">{{ t('cardsdisinfection_cleaning') }}</h3>
+                    <p class="text-center text-sm hidden hover:block">{{ t('cardsdisinfection_cleaning_desc') }}</p>
                 </div>
             </div>
         </div>
