@@ -116,6 +116,10 @@ html {
     border-radius: 0.75rem;
 }
 
+.bg-green-gradient {
+    background: rgb(174, 210, 135);
+    background: radial-gradient(circle, rgba(174, 210, 135, 1) 0%, rgba(151, 199, 99, 1) 100%);
+}
 
 .shadow-custom-btn {
     box-shadow: 0px 0px 32px 0px #00000012;

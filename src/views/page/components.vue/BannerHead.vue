@@ -253,10 +253,6 @@ const onSlideChange = (swiper) => {
     background-size: cover;
 }
 
-.bg-green-gradient {
-    background: rgb(174, 210, 135);
-    background: radial-gradient(circle, rgba(174, 210, 135, 1) 0%, rgba(151, 199, 99, 1) 100%);
-}
 
 .line1 {
     width: calc(25%);
