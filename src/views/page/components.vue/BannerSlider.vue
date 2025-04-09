@@ -5,7 +5,7 @@
             <Swiper :modules="[Thumbs]" :thumbs="{ swiper: thumbsSwiper }" :slides-per-view="1" :loop="true"
                 @swiper="setMainSwiper" @slideChange="onSlideChange" class="rounded-xl shadow-lg w-full h-[400px]">
                 <SwiperSlide v-for="(slide, index) in slides" :key="index">
-                    <img :src="slide.image" class="w-full h-full object-cover rounded-3xl" />
+                    <img :src="slide.image" class="w-full h-full object-cover rounded-xl" />
                 </SwiperSlide>
             </Swiper>
 
@@ -58,14 +58,17 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Thumbs } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/thumbs';
-import home from '/src/assets/images/home.webp'
+import carpet_clean from '/src/assets/own_images/carpet_clean.jpg'
+import carpet_dust_clean from '/src/assets/own_images/carpet_dust_clean.jpg'
+import carpet_clean2 from '/src/assets/own_images/carpet_clean_zoom.jpg'
+
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 // Массив изображений
 const slides = [
-    { image: home },
-    { image: home },
-    { image: home }
+    { image: carpet_clean },
+    { image: carpet_dust_clean },
+    { image: carpet_clean2 }
 ];
 
 // Хранение активных слайдеров

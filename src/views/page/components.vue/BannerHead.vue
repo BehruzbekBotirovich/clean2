@@ -5,10 +5,7 @@
             <!-- col1 -->
             <div class="col-span-1">
                 <div class="flex gap-2 items-center mt-8">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 32 32">
-                        <path fill="#AED287"
-                            d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m7.5 7a3.5 3.5 0 1 1-3.5 3.5A3.504 3.504 0 0 1 23.5 9m.435-1.978A5.528 5.528 0 0 0 23.5 7a5.483 5.483 0 0 0-4.132 1.878A8.01 8.01 0 0 0 13.8 4.211a11.855 11.855 0 0 1 10.134 2.811M16 28a4 4 0 1 1 4-4a4.005 4.005 0 0 1-4 4m-4-10a6 6 0 1 1 6-6a6.007 6.007 0 0 1-6 6m-8-2a11.97 11.97 0 0 1 .211-2.199a7.992 7.992 0 0 0 7.346 6.176a5.958 5.958 0 0 0-.89 6.757A12.003 12.003 0 0 1 4 16m17.333 10.734a5.983 5.983 0 0 0-4.179-8.62a8.02 8.02 0 0 0 1.913-2.368a5.488 5.488 0 0 0 8.917-.068c.003.108.016.214.016.322a12.003 12.003 0 0 1-6.667 10.734" />
-                    </svg>
+                    <img class="w-[3rem] h-[3rem]" src="/src/assets/own_images/logo_bug.jpg" alt="">
                     <div>
                         <h3 class="text-3xl text-graydark font-semibold">Bio<span class="text-maingreen">Clean</span>
                         </h3>
@@ -123,6 +120,7 @@
 
                     <div>
                         <p class="font-morice text-2xl"> 998 (78) 113 87 87</p>
+                        <p class="font-morice text-2xl"> 998 (99) 806 20 10</p>
                     </div>
 
                     <div>

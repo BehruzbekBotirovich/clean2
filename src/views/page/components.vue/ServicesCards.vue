@@ -3,32 +3,32 @@
         <h3 class="text-4xl  font-morice uppercase text-center" v-html="t('cards.services_title')">
         </h3>
         <div class="services-wrapper grid grid-cols-3 gap-2 my-10">
-            <div class="servise__card shadow-lg">
-                <img class="aspect-[5/4]" src="/src/assets/images/genuborka.jpg" alt="">
+            <div class="servise__card aspect-[5/4] shadow-lg">
+                <img class="object-cover w-full h-full " src="/src/assets/images/genuborka.jpg" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsgeneral_cleaning') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsgeneral_cleaning_desc') }}</p>
                 </div>
             </div>
 
-            <div class="servise__card shadow-lg">
-                <img class="aspect-[5/4]" src="/src/assets/images/remont.jpg" alt="">
+            <div class="servise__card aspect-[5/4] shadow-lg">
+                <img class="object-cover w-full h-full " src="/src/assets/images/remont.jpg" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsafter_repair') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsafter_repair_desc') }}</p>
                 </div>
             </div>
 
-            <div class="servise__card shadow-lg">
-                <img class="aspect-[5/4]" src="/src/assets/images/fasad.jpg" alt="">
+            <div class="servise__card aspect-[5/4] shadow-lg">
+                <img class="object-cover w-full h-full " src="/src/assets/images/fasad.jpg" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsfacade_washing') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsfacade_washing_desc') }}</p>
                 </div>
             </div>
 
-            <div class="servise__card shadow-lg">
-                <img class="aspect-[5/4]" src="/src/assets/images/mebel.webp" alt="">
+            <div class="servise__card aspect-[5/4] shadow-lg">
+                <img class="object-cover w-full h-full " src="/src/assets/images/mebel.webp" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsupholstery_cleaning') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsupholstery_cleaning_desc') }}
@@ -36,16 +36,16 @@
                 </div>
             </div>
 
-            <div class="servise__card shadow-lg">
-                <img class="aspect-[5/4]" src="/src/assets/images/bruschatka.jpg" alt="">
+            <div class="servise__card aspect-[5/4] shadow-lg">
+                <img class="object-cover w-full h-full " src="/src/assets/images/bruschatka.jpg" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsbrick_cleaning') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsbrick_cleaning_desc') }}</p>
                 </div>
             </div>
 
-            <div class="servise__card shadow-lg">
-                <img class="aspect-[5/4]" src="/src/assets/images/dizinuborka.webp" alt="">
+            <div class="servise__card shadow-lg aspect-[5/4]">
+                <img class="object-cover w-full h-full" src="/src/assets/images/dizinuborka.webp" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsdisinfection_cleaning') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsdisinfection_cleaning_desc') }}

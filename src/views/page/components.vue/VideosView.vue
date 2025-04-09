@@ -60,7 +60,7 @@
 
             <!-- Круг 2 -->
             <a xlink:href="https://www.instagram.com/reel/C7Y7jiYoBAe/" target="_blank">
-                <image x="112" y="16" width="100" height="100" xlink:href="/src/assets/circles/circle2.jpg"
+                <image x="112" y="16" width="100" height="100" xlink:href="/src/assets/circles/clean_gas.png"
                     clip-path="url(#circleMask2)" />
                 <circle cx="162" cy="66" r="19" fill="#AED288" stroke="#EBF7EA" stroke-width="6" />
                 <path d="M171 66L156.75 75.5263V56.4737L171 66Z" fill="white" />
@@ -83,7 +83,7 @@
             </a>
 
             <!-- Круг 5 -->
-            <a xlink:href="https://www.instagram.com/p/DHgApi0o2AO/" target="_blank">
+            <a xlink:href="https://www.instagram.com/p/DHT8wYKuPNi/" target="_blank">
                 <image x="743" y="16" width="100" height="100" xlink:href="/src/assets/circles/circle5.jpg"
                     clip-path="url(#circleMask5)" />
                 <circle cx="793" cy="66" r="19" fill="#AED288" stroke="#EBF7EA" stroke-width="6" />
@@ -91,7 +91,7 @@
             </a>
 
             <!-- Круг 6 -->
-            <a xlink:href="https://www.instagram.com/p/DHgApi0o2AO/" target="_blank">
+            <a xlink:href="https://www.instagram.com/p/DD1zKdcub02/" target="_blank">
                 <image x="833" y="99" width="100" height="100" xlink:href="/src/assets/circles/circle6.jpg"
                     clip-path="url(#circleMask6)" />
                 <circle cx="883" cy="149" r="19" fill="#AED288" stroke="#EBF7EA" stroke-width="6" />
@@ -99,7 +99,7 @@
             </a>
 
             <!-- Круг 7 -->
-            <a xlink:href="https://www.instagram.com/p/DHgApi0o2AO/" target="_blank">
+            <a xlink:href="https://www.instagram.com/p/DHaxc2dNwfF/" target="_blank">
                 <image x="583" y="309" width="100" height="100" xlink:href="/src/assets/circles/circle7.jpg"
                     clip-path="url(#circleMask7)" />
                 <circle cx="633" cy="359" r="19" fill="#AED288" stroke="#EBF7EA" stroke-width="6" />
@@ -107,15 +107,15 @@
             </a>
 
             <!-- Круг 8 -->
-            <a xlink:href="https://www.instagram.com/p/DHgApi0o2AO/" target="_blank">
-                <image x="272" y="309" width="100" height="100" xlink:href="/src/assets/circles/circle8.jpg"
+            <a xlink:href="https://www.instagram.com/p/C6tceb3I2dy/" target="_blank">
+                <image x="272" y="309" width="100" height="100" xlink:href="/src/assets/circles/carpet-cleaner-removing-dirt.jpg"
                     clip-path="url(#circleMask8)" />
                 <circle cx="322" cy="359" r="19" fill="#AED288" stroke="#EBF7EA" stroke-width="6" />
                 <path d="M331 359L316.75 368.526V349.474L331 359Z" fill="white" />
             </a>
 
             <!-- Круг 9 -->
-            <a xlink:href="https://www.instagram.com/p/DHgApi0o2AO/" target="_blank">
+            <a xlink:href="https://www.instagram.com/p/C68_5iKoNvQ/" target="_blank">
                 <image x="18" y="235" width="160" height="160" xlink:href="/src/assets/circles/circle9.jpg"
                     clip-path="url(#circleMask9)" />
                 <circle cx="98" cy="315" r="32.2" fill="#AED288" stroke="#EBF7EA" stroke-width="6" />
@@ -132,7 +132,7 @@
             <!-- #################### -->
             <!-- Круг 11 -->
             <a xlink:href="https://www.instagram.com/p/DHgApi0o2AO/" target="_blank">
-                <image x="398" y="52" width="160" height="160" xlink:href="/src/assets/circles/circle2.jpg"
+                <image x="398" y="52" width="160" height="160" xlink:href="/src/assets/circles/cleaner_prepare.png"
                     clip-path="url(#circleMask11)" />
                 <circle cx="478" cy="132" r="32.2" fill="#AED288" stroke="#EBF7EA" stroke-width="6" />
                 <path d="M492.4 132L469.6 147.242V116.758L492.4 132Z" fill="white" />
@@ -140,7 +140,7 @@
 
             <!-- Круг 12 -->
             <a xlink:href="https://www.instagram.com/p/DHgApi0o2AO/" target="_blank">
-                <image x="616" y="132" width="160" height="160" xlink:href="/src/assets/circles/circle4.jpg"
+                <image x="616" y="132" width="160" height="160" xlink:href="/src/assets/circles/cleaning_person.png"
                     clip-path="url(#circleMask12)" />
                 <circle cx="696" cy="212" r="32.2" fill="#AED288" stroke="#EBF7EA" stroke-width="6" />
                 <path d="M710.4 212L687.6 227.242V196.758L710.4 212Z" fill="white" />
@@ -155,7 +155,7 @@
             </a>
 
             <!-- Круг 14 -->
-            <a xlink:href="https://www.instagram.com/p/DHgApi0o2AO/" target="_blank">
+            <a xlink:href="https://www.instagram.com/p/DHGhtYYopwo/" target="_blank">
                 <image x="399" y="235" width="160" height="160" xlink:href="/src/assets/circles/circle8.jpg"
                     clip-path="url(#circleMask14)" />
                 <circle cx="479" cy="315" r="32.2" fill="#AED288" stroke="#EBF7EA" stroke-width="6" />

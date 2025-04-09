@@ -33,9 +33,9 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import { useI18n } from 'vue-i18n';
-import flagUz from '/src/assets/images/FlagUZ.svg';
-import flagRu from '/src/assets/images/FlagRu.svg';
-import flagEn from '/src/assets/images/FlagEn.svg';
+import flagUz from '/src/assets/lang_images/FlagUZ.svg';
+import flagRu from '/src/assets/lang_images/FlagRu.svg';
+import flagEn from '/src/assets/lang_images/FlagEn.svg';
 
 // i18n setup
 const { locale } = useI18n();
@@ -100,7 +100,7 @@ const getLanguageName = (langCode) => {
 }
 
 .language-select {
-    width: 140px;
+    width: 130px;
     border-radius: 10px;
     border: 1px solid #ccc;
     background-color: #f5f6f7;
