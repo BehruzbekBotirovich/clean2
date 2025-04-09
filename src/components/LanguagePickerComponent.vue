@@ -100,7 +100,7 @@ const getLanguageName = (langCode) => {
 }
 
 .language-select {
-    width: 130px;
+    width: 140px;
     border-radius: 10px;
     border: 1px solid #ccc;
     background-color: #f5f6f7;
