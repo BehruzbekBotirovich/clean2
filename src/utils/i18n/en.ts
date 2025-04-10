@@ -5,7 +5,7 @@ export const en = {
     place: "Tashkent city, Uzbekistan",
     write_us: "Write to us",
     comment_title: '<span class="text-maingreen">Comments</span> about our works</h3>',
-    commment_subtitle: "We always have good comments",
+    comment_subtitle: "We always have good comments",
     videos_title: '<span class="text-maingreen">Cloud of</span> our works</h3>',
     videos_subtitle: "They happy - we are happy too",
     menu: {
