@@ -6,7 +6,8 @@
                     <span class="text-maingreen">{{ $t('form.inquiry_interest') }}</span><br>
                     {{ $t('form.leave_request') }}
                 </h3>
-                <form @submit.prevent="submitForm" class="grid grid-cols-3 gap-10 mt-12 container">
+                <form @submit.prevent="submitForm"
+                    class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-10 mt-12 container">
                     <div class="mb-4">
                         <input v-model="name" id="name" type="text" :placeholder="$t('form.placeholder_name')"
                             class="w-full p-6 text-lg bg-maingray/40 border-2 border-transparent rounded-xl outline-none focus:border-maingreen"
@@ -21,7 +22,7 @@
                     </div>
 
                     <button type="submit" :disabled="isLoading"
-                        class="flex gap-2 items-center justify-center hover:cursor-pointer  w-full h-fit px-8 py-6 bg-green-gradient text-white font-bold rounded-xl">
+                        class="flex gap-2 col-span-2 md:col-span-1 items-center justify-center hover:cursor-pointer  w-full h-fit px-8 py-6 bg-green-gradient text-white font-bold rounded-xl">
                         {{ $t('form.submit_request') }}
                         <icon-loading-spinner v-if="isLoading" />
                     </button>

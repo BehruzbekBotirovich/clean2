@@ -100,7 +100,7 @@ const getLanguageName = (langCode) => {
 }
 
 .language-select {
-    width: 140px;
+    width: calc(100% + 1.5rem);
     border-radius: 10px;
     border: 1px solid #ccc;
     background-color: #f5f6f7;
@@ -109,9 +109,10 @@ const getLanguageName = (langCode) => {
 
 .select-box {
     display: flex;
-    justify-content: space-between;
+    gap: 0.25rem;
     align-items: center;
-    padding: 10px;
+    padding: 0.5rem;
+    padding-right: 0;
     background-color: #fff;
     border-radius: 10px;
     user-select: none;
@@ -140,7 +141,7 @@ const getLanguageName = (langCode) => {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: calc(100% + 1.5rem);
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -153,7 +154,7 @@ const getLanguageName = (langCode) => {
 .dropdown-item {
     display: flex;
     align-items: center;
-    padding: 6px 10px;
+    padding: 0.4rem 1rem;
     cursor: pointer;
 }
 

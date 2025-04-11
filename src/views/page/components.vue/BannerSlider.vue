@@ -1,6 +1,13 @@
 <template>
-    <div class="flex container py-24">
-        <div class="relative flex w-1/2 items-center gap-8">
+    <div class="md:flex container py-24 space-y-4">
+        <div class="md:hidden items-center px-4">
+            <div>
+                <h3 class="text-6xl mb-4 font-morice" v-html="t('banner_slider.clear_flat')"> </h3>
+                <p class="text-xl text-black/50" v-html="t('banner_slider.title')"></p>
+            </div>
+        </div>
+
+        <div class="relative flex md:w-1/2 items-center gap-6">
             <!-- Основной Swiper -->
             <Swiper :modules="[Thumbs]" :thumbs="{ swiper: thumbsSwiper }" :slides-per-view="1" :loop="true"
                 @swiper="setMainSwiper" @slideChange="onSlideChange" class="rounded-xl shadow-lg w-full h-[400px]">
@@ -18,7 +25,7 @@
                     </svg>
                 </button>
                 <Swiper @swiper="setThumbsSwiper" :direction="'vertical'" :slides-per-view="3" :space-between="10"
-                    class="h-[400px] w-[150px]">
+                    class="h-[400px] w-[10rem]">
                     <SwiperSlide v-for="(slide, index) in slides" :key="index">
                         <img :src="slide.image"
                             class="w-full h-full object-cover rounded-xl cursor-pointer transition-all duration-300"
@@ -34,7 +41,7 @@
             </div>
         </div>
 
-        <div class="w-1/2 flex items-center px-20">
+        <div class="hidden md:w-1/2 md:flex items-center px-20">
             <div>
                 <h3 class="text-6xl mb-4 font-morice" v-html="t('banner_slider.clear_flat')"> </h3>
                 <p class="text-xl text-black/50" v-html="t('banner_slider.title')"></p>

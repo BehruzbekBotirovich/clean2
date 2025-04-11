@@ -1,6 +1,6 @@
 <template>
-    <footer class="py-24 relative overflow-hidden">
-        <h3 class="text-4xl uppercase mb-6 text-center font-morice">
+    <footer class=" md:py-24 relative overflow-hidden space-y-2">
+        <h3 class="text-4xl uppercase md:mb-6 text-center font-morice">
             <span class="text-maingreen">{{ $t('footer.title') }}</span>
             <br>{{ $t('footer.subtitle') }}
         </h3>
@@ -9,7 +9,7 @@
                 {{ $t('footer.description') }}
             </p>
         </div>
-        <div class="flex justify-center mt-8 ">
+        <div class="flex justify-center md:mt-8 ">
             <button class="btn bg-maingreen px-10 py-6 text-white">{{ $t('footer.orderCleaning') }}</button>
         </div>
         <!-- bg-images -->

@@ -3,7 +3,7 @@
         <h3 class="text-4xl text-center font-morice" v-html="$t('comment_title')"></h3>
         <p class="text-lg text-center">{{ $t('comment_subtitle') }}</p>
         <div class="relative w-full mt-10">
-            <Swiper :modules="[Navigation]" :slides-per-view="1.5" :space-between="60" :breakpoints="{
+            <Swiper :modules="[Navigation]" :slides-per-view="1.2" :space-between="60" :breakpoints="{
                 640: { slidesPerView: 2.5 },
                 1024: { slidesPerView: 2 }
             }" :centeredSlides="true" :loop="true" navigation class="w-full">

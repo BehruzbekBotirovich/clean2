@@ -33,9 +33,9 @@ export const ru = {
         all_work: "Все выди работ",
         all_time: "В любое время суток",
         payafter: "Оплата после работы",
-        cleaning_description: "Берёмся за любые виды <br>уборки на любых объектах",
-        cleaning_description2: '<span class="text-maingreen">Оставьте заявку</span> в удобное <br> для вас время.',
-        cleaning_description3: "Без предоплаты. Вы платите только <br> за выполненную работу."
+        cleaning_description: "Берёмся за любые виды уборки на любых объектах",
+        cleaning_description2: 'Оставьте заявку  в удобное для вас время.',
+        cleaning_description3: "Без предоплаты. Вы платите только за выполненную работу."
     },
     banner_slider: {
         logan: "Чистота с немецким акцентом Эффективно.<br> Безопасно. По разумной цене.",

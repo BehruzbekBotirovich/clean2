@@ -2,7 +2,7 @@ export const uz = {
     company_title: "Toshkentdagi tozalash kompaniyasi",
     order: "Tozalashga buyurtma berish",
     cleaning: "Tozalash hizmati",
-    place: "Toshkent shahri, O'zbekiston",
+    place: "Toshkent sh. O'zbekiston",
     write_us: "Bizga yozing",
     comment_title: '<span class="text-maingreen">Bizning  hizmat</span> haqida fikrlar</h3>',
     comment_subtitle: "Bizga minnatdorchilik izohlari yoziladi",
@@ -33,9 +33,9 @@ export const uz = {
         all_work: "Barcha turdagi ishlar",
         all_time: "Kunning istalgan vaqtida",
         payafter: "Ish tugagandan keyin to'lov",
-        cleaning_description: "Har qanday <br> obyektda tozalash xizmatlarini ko'rsatamiz",
-        cleaning_description2: '<span class="text-maingreen">Ariza qoldiring</span> sizga qulay <br> vaqtda.',
-        cleaning_description3: "Oldindan to'lov yo'q. Siz faqat <br> bajarilgan ish uchun to'laysiz."
+        cleaning_description: "Har qanday  obyektda tozalash xizmatlarini ko'rsatamiz",
+        cleaning_description2: 'Ariza qoldiring sizga qulay  vaqtda.',
+        cleaning_description3: "Oldindan to'lov yo'q. Siz faqat bajarilgan ish uchun to'laysiz."
     },
     banner_slider: {
         logan: "20 YILDAN BERI SIZGA VA UYINGIZGA <br> TOZALIKNI SAQLASHDA YORDAM BERAMIZ",

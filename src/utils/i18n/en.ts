@@ -33,9 +33,9 @@ export const en = {
         all_work: "All types of work",
         all_time: "At any time of day",
         payafter: "Payment after work",
-        cleaning_description: "We offer cleaning services <br> for any type of objects",
-        cleaning_description2: '<span class="text-maingreen">Leave a request</span> at a convenient <br> time for you.',
-        cleaning_description3: "No prepayment required. You pay only <br> for the work done."
+        cleaning_description: "We offer cleaning services for any type of objects",
+        cleaning_description2: 'Leave a request at a convenient time for you.',
+        cleaning_description3: "No prepayment required. You pay only for the work done."
     },
     banner_slider: {
         logan: "FOR 20 YEARS WE HAVE BEEN HELPING YOU AND YOUR HOME <br> TO STAY CLEAN AND TIDY",

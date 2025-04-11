@@ -41,7 +41,7 @@
 
 
 html {
-    color: #3e3e3e;
+    color: var(--color-graydark);
     font-size: 10px;
 
     @variant sm {

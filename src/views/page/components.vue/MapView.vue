@@ -7,7 +7,7 @@
                     <div>
                         <h3 class="text-2xl text-graydark font-semibold">Bio<span class="text-maingreen">Clean</span>
                         </h3>
-                        <div class="text-graydark text-xs text-nowrap">{{ $t('company_title') }}</div>
+                        <div class="hidden md:block text-graydark text-xs text-nowrap">{{ $t('company_title') }}</div>
                     </div>
                 </div>
 

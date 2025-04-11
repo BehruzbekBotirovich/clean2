@@ -2,11 +2,14 @@
     <div class="w-full max-w-6xl mx-auto">
         <h2 class="text-3xl font-morice  text-center mb-4" v-html="t('works_gallery')">
         </h2>
-        <swiper :modules="[Navigation]" :slides-per-view="1.8" centeredSlides :space-between="30" navigation loop
-            class="overflow-visible">
+        <swiper :modules="[Navigation]" :breakpoints="{
+            320: { slidesPerView: 1.2 },
+            640: { slidesPerView: 1.4 },
+            1024: { slidesPerView: 1.8 },
+        }" centeredSlides :space-between="30" navigation loop class="overflow-visible">
             <swiper-slide v-for="(img, i) in images" :key="i" class="swiper-slide-custom py-10">
                 <div class="overflow-hidden rounded-xl shadow-lg transition-all duration-500">
-                    <img :src="img" alt="gallery image" class="w-full h-[400px] object-cover rounded-xl" />
+                    <img :src="img" alt="gallery image" class="w-full  h-[28rem] object-cover rounded-xl" />
                 </div>
             </swiper-slide>
 
@@ -39,7 +42,7 @@ import { Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import { useI18n } from 'vue-i18n';
-const { t } = useI18n();    
+const { t } = useI18n();
 import after1 from '/src/assets/slider/after1.png'
 import before1 from '/src/assets/slider/before1.png'
 import bruschatka from '/src/assets/slider/bruschatka.jpg'

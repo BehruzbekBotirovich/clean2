@@ -2,7 +2,7 @@
     <div class="container py-24">
         <h3 class="text-4xl  font-morice uppercase text-center" v-html="t('cards.services_title')">
         </h3>
-        <div class="services-wrapper grid grid-cols-3 gap-2 my-10">
+        <div class="services-wrapper grid grid-cols-2 md:grid-cols-3 gap-2 my-10">
             <div class="servise__card aspect-[5/4] shadow-lg">
                 <img class="object-cover w-full h-full " src="/src/assets/images/genuborka.jpg" alt="">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
