@@ -27,7 +27,7 @@
                 <div>
                     <h3>{{ $t('write_us') }}</h3>
                     <div class="social-links mt-2">
-                        <a href="https://t.me/BiooCleanuz">
+                        <a href="https://t.me/BiooCleanuz" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.25rem" height="1.25rem"
                                 viewBox="0 0 24 24">
                                 <path fill="currentColor" fill-rule="evenodd"

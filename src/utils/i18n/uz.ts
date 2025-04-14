@@ -1,6 +1,6 @@
 export const uz = {
-    company_title: "Toshkentdagi tozalash kompaniyasi",
-    order: "Tozalashga buyurtma berish",
+    company_title: "Tozalash kompaniyasi",
+    order: "Buyurtma berish",
     cleaning: "Tozalash hizmati",
     place: "Toshkent sh. O'zbekiston",
     write_us: "Bizga yozing",
@@ -20,10 +20,10 @@ export const uz = {
         garanty: '<span class="text-maingreen">Kafolatlaymiz</span> uyingiz va oilangiz xavfsizligi va tozaligini',
         flat: "Kvartiralar",
         offices: "Uylar va ofislar",
-        german_tools: "Germaniya uskunalari",
+        german_tools: "Germaniya uskunalari", 
         profy_cleaner: "Professional tozalovchilar",
         effectiv_service: "Samarali xizmat",
-        bug_fix: "Zararkunandalardan xalos bo'lish uchun",
+        bug_fix: "Zararkunandalardan xalos bo'lish",
         cleaning_all: "Polatdan shiftgacha tozalash",
         price: "Qulay narxlarda",
         animal_free: "Mutlaqo xavfsiz",
@@ -33,12 +33,12 @@ export const uz = {
         all_work: "Barcha turdagi ishlar",
         all_time: "Kunning istalgan vaqtida",
         payafter: "Ish tugagandan keyin to'lov",
-        cleaning_description: "Har qanday  obyektda tozalash xizmatlarini ko'rsatamiz",
-        cleaning_description2: 'Ariza qoldiring sizga qulay  vaqtda.',
-        cleaning_description3: "Oldindan to'lov yo'q. Siz faqat bajarilgan ish uchun to'laysiz."
+        cleaning_description: "Har qanday obyektda tozalash xizmatlarini ko'rsatamiz",
+        cleaning_description2: "Ariza qoldiring sizga qulay vaqtda",
+        cleaning_description3: "Oldindan to'lov yo'q. Siz faqat bajarilgan ish uchun to'laysiz"
     },
     banner_slider: {
-        logan: "20 YILDAN BERI SIZGA VA UYINGIZGA <br> TOZALIKNI SAQLASHDA YORDAM BERAMIZ",
+        logan: "Nemis uslubidagi tozalik. Samarali.<br> Xavfsiz. Oqilona narxda.",
         title: 'BioClean</span> — turli xonadonlar uchun tozalash va tozalikni saqlash xizmatlarini taqdim etuvchi kompaniya.</p>',
         clear_flat: '<span class="text-maingreen">Kvartirada tozalik</span> <br> — bizning g\'amxo\'rligimiz'
     },
@@ -95,7 +95,7 @@ export const uz = {
         title: "SIZNING XONADONINGIZGA YANGI",
         subtitle: "NAFAS BERING",
         description: "Bizning ishimiz bilan xonadoningizdagi havoning yangilanganini ko'rasiz va his qilasiz.",
-        orderCleaning: "Tozalashga buyurtma berish"
+        orderCleaning: "Buyurtma berish"
     }
 }
 export default uz
