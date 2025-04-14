@@ -3,7 +3,8 @@
         <div class="flex gap-4">
             <div class="my-6 w-[20rem] space-y-6">
                 <div class="flex gap-2 items-center ">
-                    <img class="w-[3rem] h-[3rem]" src="/src/assets/own_images/logo_bug.jpg" alt="">
+                    <img class="w-[3rem] h-[3rem]" src="/src/assets/own_images/logo_bug.jpg"
+                        alt="Профессиональная чистка ковров в Ташкенте — BioClean">
                     <div>
                         <h3 class="text-2xl text-graydark font-semibold">Bio<span class="text-maingreen">Clean</span>
                         </h3>

@@ -4,7 +4,8 @@
         </h3>
         <div class="services-wrapper grid grid-cols-2 md:grid-cols-3 gap-2 my-10">
             <div class="servise__card aspect-[5/4] shadow-lg">
-                <img class="object-cover w-full h-full " src="/src/assets/images/genuborka.jpg" alt="">
+                <img class="object-cover w-full h-full" src="/src/assets/images/genuborka.jpg"
+                    alt="Генеральная уборка квартиры или дома от BioClean в Ташкенте">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsgeneral_cleaning') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsgeneral_cleaning_desc') }}</p>
@@ -12,7 +13,8 @@
             </div>
 
             <div class="servise__card aspect-[5/4] shadow-lg">
-                <img class="object-cover w-full h-full " src="/src/assets/images/remont.jpg" alt="">
+                <img class="object-cover w-full h-full" src="/src/assets/images/remont.jpg"
+                    alt="Уборка после ремонта помещений — чистота без строительной пыли от BioClean">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsafter_repair') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsafter_repair_desc') }}</p>
@@ -20,7 +22,8 @@
             </div>
 
             <div class="servise__card aspect-[5/4] shadow-lg">
-                <img class="object-cover w-full h-full " src="/src/assets/images/fasad.jpg" alt="">
+                <img class="object-cover w-full h-full" src="/src/assets/images/fasad.jpg"
+                    alt="Профессиональная мойка фасадов зданий и домов в Ташкенте — BioClean">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsfacade_washing') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsfacade_washing_desc') }}</p>
@@ -28,7 +31,8 @@
             </div>
 
             <div class="servise__card aspect-[5/4] shadow-lg">
-                <img class="object-cover w-full h-full " src="/src/assets/images/mebel.webp" alt="">
+                <img class="object-cover w-full h-full" src="/src/assets/images/mebel.webp"
+                    alt="Химчистка мягкой мебели и диванов с выездом от BioClean">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsupholstery_cleaning') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsupholstery_cleaning_desc') }}
@@ -37,7 +41,8 @@
             </div>
 
             <div class="servise__card aspect-[5/4] shadow-lg">
-                <img class="object-cover w-full h-full " src="/src/assets/images/bruschatka.jpg" alt="">
+                <img class="object-cover w-full h-full" src="/src/assets/images/bruschatka.jpg"
+                    alt="Чистка брусчатки и тротуарной плитки от грязи и пыли — услуги BioClean">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsbrick_cleaning') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsbrick_cleaning_desc') }}</p>
@@ -45,7 +50,8 @@
             </div>
 
             <div class="servise__card shadow-lg aspect-[5/4]">
-                <img class="object-cover w-full h-full" src="/src/assets/images/dizinuborka.webp" alt="">
+                <img class="object-cover w-full h-full" src="/src/assets/images/dizinuborka.webp"
+                    alt="Профессиональная дезинфекция помещений — квартиры, офисы, дома от BioClean">
                 <div class="absolute left-0 bottom-0 w-full p-4 bg-gray-500/30 text-white">
                     <h3 class="text-xl font-morice text-center my-2">{{ $t('cards.cardsdisinfection_cleaning') }}</h3>
                     <p class="text-center text-sm hidden hover:block">{{ $t('cards.cardsdisinfection_cleaning_desc') }}
@@ -53,6 +59,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </template>
 <script setup>

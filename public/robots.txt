@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bio-clean.uz/sitemap.xml

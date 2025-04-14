@@ -14,10 +14,10 @@
         </div>
         <!-- bg-images -->
         <div class="absolute top-0  -translate-x-1/2 left-0 w-1/2">
-            <img class="w-full " src="/src/assets/bg/kusthalf.png" alt="">
+            <img class="w-full " src="/src/assets/bg/kusthalf.png" alt="greenflower">
         </div>
         <div class="absolute top-0  translate-x-1/2 right-0 w-1/2">
-            <img class="w-full " src="/src/assets/bg/kusthalf.png" alt="">
+            <img class="w-full " src="/src/assets/bg/kusthalf.png" alt="greenflower">
         </div>
     </footer>
 </template>

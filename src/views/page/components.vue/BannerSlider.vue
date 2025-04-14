@@ -12,13 +12,13 @@
             <Swiper :modules="[Thumbs]" :thumbs="{ swiper: thumbsSwiper }" :slides-per-view="1" :loop="true"
                 @swiper="setMainSwiper" @slideChange="onSlideChange" class="rounded-xl shadow-lg w-full h-[400px]">
                 <SwiperSlide v-for="(slide, index) in slides" :key="index">
-                    <img :src="slide.image" class="w-full h-full object-cover rounded-xl" />
+                    <img :src="slide.image" class="w-full h-full object-cover rounded-xl" :alt="slide.alt" />
                 </SwiperSlide>
             </Swiper>
 
             <!-- Миниатюры -->
             <div class="flex flex-col gap-6 relative">
-                <button @click="prevSlide" class="slide-btn top-0 -translate-y-1/2">
+                <button @click="prevSlide" role="previous" class="slide-btn top-0 -translate-y-1/2">
                     <svg class="rotate-90" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24">
                         <path fill="currentColor" d="M17.77 3.77L16 2L6 12l10 10l1.77-1.77L9.54 12z" />
@@ -27,12 +27,12 @@
                 <Swiper @swiper="setThumbsSwiper" :direction="'vertical'" :slides-per-view="3" :space-between="10"
                     class="h-[400px] w-[10rem]">
                     <SwiperSlide v-for="(slide, index) in slides" :key="index">
-                        <img :src="slide.image"
+                        <img :src="slide.image" :alt="slide.alt"
                             class="w-full h-full object-cover rounded-xl cursor-pointer transition-all duration-300"
                             :class="{ 'grayscale opacity-50': activeIndex !== index }" @click="goToSlide(index)" />
                     </SwiperSlide>
                 </Swiper>
-                <button @click="nextSlide" class="slide-btn bottom-0 translate-y-1/2">
+                <button @click="nextSlide" role="next" class="slide-btn bottom-0 translate-y-1/2">
                     <svg class="-rotate-90" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24">
                         <path fill="currentColor" d="M17.77 3.77L16 2L6 12l10 10l1.77-1.77L9.54 12z" />
@@ -73,9 +73,13 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 // Массив изображений
 const slides = [
-    { image: carpet_clean },
-    { image: carpet_dust_clean },
-    { image: carpet_clean2 }
+    { image: carpet_clean, alt: "Профессиональная чистка ковров в Ташкенте — BioClean" },
+    {
+        image: carpet_dust_clean, alt: "Сотрудник клининговой компании BioClean очищает ковер экстрактором"
+    },
+    {
+        image: carpet_clean2, alt: "Профессиональная чистка ковров в Ташкенте"
+    }
 ];
 
 // Хранение активных слайдеров
