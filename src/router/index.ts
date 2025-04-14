@@ -28,7 +28,7 @@ router.beforeEach((to, from, next) => {
   }
 
   // Установка языка из URL
-  i18n.global.locale.value = locale;
+  i18n.global.locale = locale as any; // либо просто locale
 
   // При желании сохранить язык в sessionStorage
   sessionStorage.setItem('lang', locale);
