@@ -5,7 +5,7 @@
             <br>{{ $t('footer.subtitle') }}
         </h3>
         <div class="flex justify-center">
-            <p class="text-center text-maingray text-xl w-1/2">
+            <p class="text-center text-gray-600 text-xl w-1/2">
                 {{ $t('footer.description') }}
             </p>
         </div>

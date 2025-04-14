@@ -42,24 +42,27 @@
                             <SwiperSlide>
                                 <div class="bg-green-slide rounded-b-[600px] h-full overflow-hidden">
                                     <img src="/src/assets/images/cleaner5.png"
+                                        alt="Свой бизнес: химчистка мебели на дому"
                                         class="w-auto h-full object-cover rounded-lg" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide class="overflow-visible">
                                 <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
                                     <img src="/src/assets/images/dizin.png"
+                                        alt="Дезинфекция производств, домов, квартир, складов в Ташкенте"
                                         class="w-auto h-full object-cover scale-110 rounded-lg" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide class="overflow-visible">
                                 <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
-                                    <img src="/src/assets/images/cleaner4.png"
+                                    <img src="/src/assets/images/cleaner4.png" alt="Мойка фасадов брусчаток по Ташкенту"
                                         class="w-auto h-full object-cover scale-110 rounded-lg" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide class="overflow-visible">
                                 <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
                                     <img src="/src/assets/images/cleanerslide.png"
+                                        alt="Уборка домов и квартир по Ташкенту"
                                         class="w-auto h-full object-cover scale-110 rounded-lg" />
                                 </div>
                             </SwiperSlide>

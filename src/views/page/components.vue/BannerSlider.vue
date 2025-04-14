@@ -18,7 +18,8 @@
 
             <!-- Миниатюры -->
             <div class="flex flex-col gap-6 relative">
-                <button @click="prevSlide" role="previous" class="slide-btn top-0 -translate-y-1/2">
+                <button @click="prevSlide" aria-label="Previous slide" role="button"
+                    class="slide-btn top-0 -translate-y-1/2">
                     <svg class="rotate-90" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24">
                         <path fill="currentColor" d="M17.77 3.77L16 2L6 12l10 10l1.77-1.77L9.54 12z" />
@@ -32,7 +33,8 @@
                             :class="{ 'grayscale opacity-50': activeIndex !== index }" @click="goToSlide(index)" />
                     </SwiperSlide>
                 </Swiper>
-                <button @click="nextSlide" role="next" class="slide-btn bottom-0 translate-y-1/2">
+                <button @click="nextSlide" aria-label="Next slide" role="button"
+                    class="slide-btn bottom-0 translate-y-1/2">
                     <svg class="-rotate-90" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24">
                         <path fill="currentColor" d="M17.77 3.77L16 2L6 12l10 10l1.77-1.77L9.54 12z" />
