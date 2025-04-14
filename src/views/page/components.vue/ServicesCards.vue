@@ -1,5 +1,5 @@
 <template>
-    <div class="container py-24">
+    <section id="services" class="container py-24">
         <h3 class="text-4xl  font-morice uppercase text-center" v-html="t('cards.services_title')">
         </h3>
         <div class="services-wrapper grid grid-cols-2 md:grid-cols-3 gap-2 my-10">
@@ -60,7 +60,7 @@
             </div>
         </div>
 
-    </div>
+    </section>
 </template>
 <script setup>
 import { ref } from 'vue';

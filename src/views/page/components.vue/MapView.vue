@@ -1,5 +1,5 @@
 <template>
-    <div class="container ">
+    <section id="contacts" class="container ">
         <div class="flex gap-4">
             <div class="my-6 w-[20rem] space-y-6">
                 <div class="flex gap-2 items-center ">
@@ -12,13 +12,7 @@
                     </div>
                 </div>
 
-                <ul>
-                    <li class="font-semibold">{{ $t('menu.home') }}</li>
-                    <li class="text-gray-400">{{ $t('menu.works') }}</li>
-                    <li class="text-gray-400">{{ $t('menu.services') }}</li>
-                    <li class="text-gray-400">{{ $t('menu.advantages') }}</li>
-                    <li class="text-gray-400">{{ $t('menu.contacts') }}</li>
-                </ul>
+                <navbar-scroll />
 
                 <div>
                     <p class="font-morice text-2xl"> 998 (78) 113 87 87</p>
@@ -78,15 +72,21 @@
                     </svg>
                     Tashkent, Mirzo Ulugbek Navnihol str 3
                 </p>
-                <button class="btn btn-ghost text-maingreen text-shadow-md">{{ $t('order') }}</button>
+                <button @click="scrollTo('order_form')" class="btn btn-ghost text-maingreen text-shadow-md">{{ $t('order') }}</button>
             </div>
         </div>
-    </div>
+    </section>
 
 </template>
 
 <script setup>
-
+import NavbarScroll from '@/components/NavbarScroll.vue'
+const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+    }
+};
 </script>
 
 <style scoped>

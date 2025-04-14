@@ -13,7 +13,7 @@ export const en = {
         home: "Home",
         works: "Our Works",
         services: "Services",
-        advantages: "Advantages",
+        cloud: "Cloud of works",
         contacts: "Contacts"
     },
     banner: {

@@ -13,7 +13,7 @@ export const ru = {
         home: "Главная",
         works: "Наши работы",
         services: "Услуги",
-        advantages: "Преимущества",
+        cloud: "Облока работ",
         contacts: "Контакты"
     },
     banner: {

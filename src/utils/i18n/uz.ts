@@ -13,14 +13,14 @@ export const uz = {
         home: "Bosh sahifa",
         works: "Bizning ishlar",
         services: "Xizmatlar",
-        advantages: "Afzalliklar",
+        cloud: "Namunalar buluti",
         contacts: "Aloqa"
     },
     banner: {
         garanty: '<span class="text-maingreen">Kafolatlaymiz</span> uyingiz va oilangiz xavfsizligi va tozaligini',
         flat: "Kvartiralar",
         offices: "Uylar va ofislar",
-        german_tools: "Germaniya uskunalari", 
+        german_tools: "Germaniya uskunalari",
         profy_cleaner: "Professional tozalovchilar",
         effectiv_service: "Samarali xizmat",
         bug_fix: "Zararkunandalardan xalos bo'lish",

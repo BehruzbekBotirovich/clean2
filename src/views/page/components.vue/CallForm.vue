@@ -1,5 +1,5 @@
     <template>
-        <div class="relative">
+        <section id="order_form" class="relative">
             <div class="wrapper-img"></div>
             <div class="container py-16 relative z-10">
                 <h3 class="font-morice text-4xl uppercase text-center">
@@ -28,7 +28,7 @@
                     </button>
                 </form>
             </div>
-        </div>
+        </section>
 
         <div v-if="showAlert" class="alert_custom">
             <span> Успешно отправлено!</span>

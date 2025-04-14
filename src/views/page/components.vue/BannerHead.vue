@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-36 relative ">
+    <section class="mb-36 relative " id="home">
         <div class="bg__home-img"></div>
         <div
             class="lg:h-screen container pb-0  w-full rounded-4xl grid grid-cols-6 gap-2 md:gap-12 relative overflow-hidden">
@@ -21,50 +21,56 @@
                     </div>
                     <p class="py-8 w-2/3" v-html="t('banner.garanty')"> </p>
 
-                    <button class="py-4 px-8 rounded-2xl mb-3  text-white text-lg  gradient">
+                    <button @click="scrollTo('order_form')"
+                        class="py-4 cursor-pointer px-8 rounded-2xl mb-3  text-white text-lg  gradient">
                         {{ t('order') }}
                     </button>
-                    <p><span class="text-gray-400">{{ t('banner.discount') }} </span> {{ t('banner.discount_per') }}</p>
+                    <p><span class="text-gray-600">{{ t('banner.discount') }} </span> {{ t('banner.discount_per') }}</p>
                 </div>
             </div>
             <!-- col2 -->
-            <div class="col-span-3   lg:col-span-2 rounded-b-xl relative h-full  flex items-center">
-                
-                <div class="w-full flex items-end h-[50vh] md:h-full mt-20 lg:mt-0">
-                    <Swiper :modules="[Autoplay]" :slides-per-view="1" :loop="true" :autoplay="{
-                        delay: 2000,
-                        disableOnInteraction: false
-                    }" @slideChange="onSlideChange" class="rounded-lg  h-full">
-                        <SwiperSlide>
-                            <div class="bg-green-slide rounded-b-[600px] h-full overflow-hidden">
-                                <img src="/src/assets/images/cleaner5.png"
-                                    class="w-auto h-full object-cover rounded-lg" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide class="overflow-visible">
-                            <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
-                                <img src="/src/assets/images/dizin.png"
-                                    class="w-auto h-full object-cover scale-110 rounded-lg" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide class="overflow-visible">
-                            <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
-                                <img src="/src/assets/images/cleaner4.png"
-                                    class="w-auto h-full object-cover scale-110 rounded-lg" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide class="overflow-visible">
-                            <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
-                                <img src="/src/assets/images/cleanerslide.png"
-                                    class="w-auto h-full object-cover scale-110 rounded-lg" />
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
+            <div class="col-span-3  ">
+                <div class="flex w-full justify-end pr-2">
+                    <language-picker-component class="mt-8" />
                 </div>
+                <div class="col-span-3 mb-2   lg:col-span-2 rounded-b-xl relative h-full  flex items-center">
+                    <div class="w-full flex items-end h-[50vh] md:h-full lg:mt-0">
+                        <Swiper :modules="[Autoplay]" :slides-per-view="1" :loop="true" :autoplay="{
+                            delay: 2000,
+                            disableOnInteraction: false
+                        }" @slideChange="onSlideChange" class="rounded-lg  h-full">
+                            <SwiperSlide>
+                                <div class="bg-green-slide rounded-b-[600px] h-full overflow-hidden">
+                                    <img src="/src/assets/images/cleaner5.png"
+                                        class="w-auto h-full object-cover rounded-lg" />
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide class="overflow-visible">
+                                <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
+                                    <img src="/src/assets/images/dizin.png"
+                                        class="w-auto h-full object-cover scale-110 rounded-lg" />
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide class="overflow-visible">
+                                <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
+                                    <img src="/src/assets/images/cleaner4.png"
+                                        class="w-auto h-full object-cover scale-110 rounded-lg" />
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide class="overflow-visible">
+                                <div class="bg-green-slide rounded-b-[600px] border-white h-full overflow-hidden">
+                                    <img src="/src/assets/images/cleanerslide.png"
+                                        class="w-auto h-full object-cover scale-110 rounded-lg" />
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
+                    </div>
 
-                <div class="line1 hidden lg:block"></div>
-                <div class="line2 hidden lg:block"></div>
+                    <div class="line1 hidden lg:block"></div>
+                    <div class="line2 hidden lg:block"></div>
+                </div>
             </div>
+
             <!-- col3 -->
             <div class="col-span-6  lg:col-span-2 mt-8 w-full">
                 <div class="hidden lg:flex justify-between gap-4">
@@ -86,15 +92,7 @@
                 <div class="lg:mt-20 space-y-5 flex lg:block items-center justify-between   ">
                     <div class="space-y-5">
                         <h3 class="text-maingreen text-5xl font-morice mb-6">{{ t('menu.title') }}</h3>
-                        <nav>
-                            <ul>
-                                <li class="font-semibold">{{ t('menu.home') }}</li>
-                                <li class="text-gray-400">{{ t('menu.works') }}</li>
-                                <li class="text-gray-400">{{ t('menu.services') }}</li>
-                                <li class="text-gray-400">{{ t('menu.advantages') }}</li>
-                                <li class="text-gray-400">{{ t('menu.contacts') }}</li>
-                            </ul>
-                        </nav>
+                        <navbar-scroll />
                     </div>
                     <div class="space-y-5">
                         <!-- number -->
@@ -154,7 +152,7 @@
                 </div>
                 <div>
                     <h3 class="text-lg mb-1 font-semibold">{{ t('banner.all_work') }}</h3>
-                    <p class="text-gray-400"> {{ $t('banner.cleaning_description') }}</p>
+                    <p class="text-gray-600"> {{ $t('banner.cleaning_description') }}</p>
                 </div>
             </div>
             <div class="servise-card">
@@ -168,7 +166,7 @@
                 </div>
                 <div>
                     <h3 class="text-lg mb-1 font-semibold">{{ t('banner.all_time') }}</h3>
-                    <p class="text-gray-400">{{ $t('banner.cleaning_description2') }}</p>
+                    <p class="text-gray-600">{{ $t('banner.cleaning_description2') }}</p>
                 </div>
             </div>
             <div class="servise-card">
@@ -180,7 +178,7 @@
                 </div>
                 <div>
                     <h3 class="text-lg mb-1 font-semibold">{{ t('banner.payafter') }}</h3>
-                    <p class="text-gray-400">{{ $t('banner.cleaning_description3') }}</p>
+                    <p class="text-gray-600">{{ $t('banner.cleaning_description3') }}</p>
                 </div>
             </div>
         </div>
@@ -188,7 +186,7 @@
         <div class=" hidden lg:block absolute right-0 top-1/6  w-1/5 bg-transparent">
             <img src="/src/assets/images/flowerbg1.png" alt="" style="mix-blend-mode: multiply;">
         </div>
-    </div>
+    </section>
 
 
 
@@ -202,12 +200,18 @@ import { ref } from 'vue'
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 import LanguagePickerComponent from '@/components/LanguagePickerComponent.vue';
+import NavbarScroll from '@/components/NavbarScroll.vue';
 
 const activeIndex = ref()
 const onSlideChange = (swiper) => {
     activeIndex.value = swiper.realIndex; // realIndex для работы с loop
 };
-
+const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+    }
+};
 </script>
 
 <style scoped>

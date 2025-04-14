@@ -4,7 +4,7 @@
             <div class="language-select">
                 <div class="select-box" @click="toggleDropdown" role="button" aria-label="Language Selector">
                     <div class="selected-lang">
-                        <img :src="getFlag(lang)" alt="Flag" class="flag" />
+                        <img :src="getFlag(lang)" alt="Флаг выбранного языка" class="flag" />
                         <span>{{ getLanguageName(lang) }}</span>
                     </div>
                     <svg :class="['dropdown-icon', { open: isOpen }]" width="25" height="24" viewBox="0 0 25 24"
@@ -18,7 +18,7 @@
                 <div v-if="isOpen" class="dropdown-list">
                     <div v-for="option in languageOptions" :key="option.code" class="dropdown-item"
                         @click="selectLang(option.code)">
-                        <img :src="option.flag" alt="Flag" class="flag" />
+                        <img :src="option.flag" :alt="`Флаг: ${option.name}`" class="flag" />
                         <span>{{ option.name }}</span>
                     </div>
                 </div>
@@ -27,84 +27,73 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
-import { useI18n } from 'vue-i18n';
 import { useRouter, useRoute } from 'vue-router';
+import { setLanguage } from '@/utils/i18n';
+
 import flagUz from '/src/assets/lang_images/FlagUZ.svg';
 import flagRu from '/src/assets/lang_images/FlagRu.svg';
 import flagEn from '/src/assets/lang_images/FlagEn.svg';
 
-const { locale } = useI18n();
 const router = useRouter();
 const route = useRoute();
 
+const lang = ref((route.params.locale as string) || 'ru');
 const isOpen = ref(false);
-const wrapperRef = ref(null);
+const wrapperRef = ref<HTMLElement | null>(null);
+const toggleDropdown = () => {
+    isOpen.value = !isOpen.value;
+};
 
-// Поддерживаемые языки
 const languageOptions = [
     { code: 'uz', name: "O'zbek", flag: flagUz },
     { code: 'ru', name: 'Русский', flag: flagRu },
     { code: 'en', name: 'English', flag: flagEn }
 ];
 
-// Текущий язык берём из URL
-const lang = ref(route.params.locale || 'ru');
-
-// Обновить язык в URL и i18n
-const selectLang = (newLang) => {
-    if (newLang === lang.value) {
-        isOpen.value = false;
-        return;
-    }
-
+const selectLang = async (newLang: string) => {
     lang.value = newLang;
-    locale.value = newLang;
-    document.documentElement.lang = newLang;
 
-    router.push({
+    // ⬇ СНАЧАЛА push в роутер
+    await router.push({
         name: route.name || 'clean',
         params: { ...route.params, locale: newLang },
         query: route.query
     });
 
+    // ⬇ ПОТОМ установка языка
+    setLanguage(newLang);
+    window.location.reload();
     isOpen.value = false;
 };
 
-// Закрытие выпадающего списка по клику вне
-const handleClickOutside = (event) => {
-    if (wrapperRef.value && !wrapperRef.value.contains(event.target)) {
+const handleClickOutside = (event: MouseEvent) => {
+    if (wrapperRef.value && !wrapperRef.value.contains(event.target as Node)) {
         isOpen.value = false;
     }
 };
 
+const getFlag = (langCode: string) => {
+    return languageOptions.find(opt => opt.code === langCode)?.flag || '';
+};
+
+const getLanguageName = (langCode: string) => {
+    return languageOptions.find(opt => opt.code === langCode)?.name || '';
+};
+
 onMounted(() => {
-    locale.value = lang.value;
-    document.documentElement.lang = lang.value;
+    setLanguage(lang.value);
     window.addEventListener('click', handleClickOutside);
 });
 
 onUnmounted(() => {
     window.removeEventListener('click', handleClickOutside);
 });
-
-const toggleDropdown = () => {
-    isOpen.value = !isOpen.value;
-};
-
-const getFlag = (langCode) => {
-    const option = languageOptions.find(option => option.code === langCode);
-    return option ? option.flag : '';
-};
-
-const getLanguageName = (langCode) => {
-    const option = languageOptions.find(option => option.code === langCode);
-    return option ? option.name : '';
-};
 </script>
 
 <style scoped>
+/* Стили без изменений */
 .language-select-wrapper {
     position: relative;
 }

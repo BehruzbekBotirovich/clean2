@@ -10,7 +10,7 @@
             </p>
         </div>
         <div class="flex justify-center md:mt-8 ">
-            <button class="btn bg-maingreen px-10 py-6 text-white">{{ $t('footer.orderCleaning') }}</button>
+            <button @click="scrollTo('order_form')" class="btn cursor-pointer bg-maingreen px-10 py-6 text-white">{{ $t('footer.orderCleaning') }}</button>
         </div>
         <!-- bg-images -->
         <div class="absolute top-0  -translate-x-1/2 left-0 w-1/2">
@@ -23,6 +23,12 @@
 </template>
 
 <script setup lang="ts">
+const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+    }
+};
 </script>
 
 <style scoped></style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full max-w-6xl mx-auto">
+    <section id="works" class="w-full max-w-6xl mx-auto">
         <h2 class="text-3xl font-morice  text-center mb-4" v-html="t('works_gallery')">
         </h2>
         <swiper :modules="[Navigation]" :breakpoints="{
@@ -33,7 +33,7 @@
                 </div>
             </template>
         </swiper>
-    </div>
+    </section>
 </template>
 
 <script setup>
