@@ -1,9 +1,7 @@
 <template>
     <div class="flex items-center" ref="wrapperRef">
-        <!-- Language selector container -->
         <div class="language-select-wrapper">
             <div class="language-select">
-                <!-- Dropdown Trigger (Showing current selected language) -->
                 <div class="select-box" @click="toggleDropdown" role="button" aria-label="Language Selector">
                     <div class="selected-lang">
                         <img :src="getFlag(lang)" alt="Flag" class="flag" />
@@ -17,7 +15,6 @@
                     </svg>
                 </div>
 
-                <!-- Dropdown list -->
                 <div v-if="isOpen" class="dropdown-list">
                     <div v-for="option in languageOptions" :key="option.code" class="dropdown-item"
                         @click="selectLang(option.code)">
@@ -33,39 +30,49 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useRouter, useRoute } from 'vue-router';
 import flagUz from '/src/assets/lang_images/FlagUZ.svg';
 import flagRu from '/src/assets/lang_images/FlagRu.svg';
 import flagEn from '/src/assets/lang_images/FlagEn.svg';
 
-// i18n setup
 const { locale } = useI18n();
+const router = useRouter();
+const route = useRoute();
 
-// Default language (uz), fetched from localStorage if available
-const lang = ref(localStorage.getItem('i18n') || 'uz');
 const isOpen = ref(false);
 const wrapperRef = ref(null);
 
-// Language options
+// Поддерживаемые языки
 const languageOptions = [
     { code: 'uz', name: "O'zbek", flag: flagUz },
     { code: 'ru', name: 'Русский', flag: flagRu },
     { code: 'en', name: 'English', flag: flagEn }
 ];
 
-// Toggle dropdown visibility
-const toggleDropdown = () => {
-    isOpen.value = !isOpen.value;
-};
+// Текущий язык берём из URL
+const lang = ref(route.params.locale || 'ru');
 
-// Select a language
+// Обновить язык в URL и i18n
 const selectLang = (newLang) => {
-    locale.value = newLang;
-    localStorage.setItem('i18n', newLang);
+    if (newLang === lang.value) {
+        isOpen.value = false;
+        return;
+    }
+
     lang.value = newLang;
+    locale.value = newLang;
+    document.documentElement.lang = newLang;
+
+    router.push({
+        name: route.name || 'clean',
+        params: { ...route.params, locale: newLang },
+        query: route.query
+    });
+
     isOpen.value = false;
 };
 
-// Close dropdown when clicking outside
+// Закрытие выпадающего списка по клику вне
 const handleClickOutside = (event) => {
     if (wrapperRef.value && !wrapperRef.value.contains(event.target)) {
         isOpen.value = false;
@@ -74,6 +81,7 @@ const handleClickOutside = (event) => {
 
 onMounted(() => {
     locale.value = lang.value;
+    document.documentElement.lang = lang.value;
     window.addEventListener('click', handleClickOutside);
 });
 
@@ -81,13 +89,15 @@ onUnmounted(() => {
     window.removeEventListener('click', handleClickOutside);
 });
 
-// Helper method to get the flag URL based on language code
+const toggleDropdown = () => {
+    isOpen.value = !isOpen.value;
+};
+
 const getFlag = (langCode) => {
     const option = languageOptions.find(option => option.code === langCode);
     return option ? option.flag : '';
 };
 
-// Helper method to get the language name
 const getLanguageName = (langCode) => {
     const option = languageOptions.find(option => option.code === langCode);
     return option ? option.name : '';
