@@ -2,8 +2,11 @@
     <div class="md:flex container py-24 space-y-4">
         <div class="md:hidden items-center px-4">
             <div>
-                <h3 class="text-6xl mb-4 font-morice" v-html="t('banner_slider.clear_flat')"> </h3>
-                <p class="text-xl text-black/50" v-html="t('banner_slider.title')"></p>
+                <h3 class="text-6xl mb-4 font-morice">
+                    <span>{{ $t('banner_slider.clear_flat1') }}</span> br
+                    {{ $t('banner_slider.clear_flat2') }}
+                </h3>
+                <p class="text-xl text-black/50">{{ $t('banner_slider.title') }}</p>
             </div>
         </div>
 
@@ -45,7 +48,10 @@
 
         <div class="hidden md:w-1/2 md:flex items-center px-20">
             <div>
-                <h3 class="text-6xl mb-4 font-morice" v-html="t('banner_slider.clear_flat')"> </h3>
+                <h3 class="text-6xl mb-4 font-morice">
+                    <span class="text-maingreen">{{ $t('banner_slider.clear_flat1') }}</span>
+                    {{ $t('banner_slider.clear_flat2') }}
+                </h3>
                 <p class="text-xl text-black/50" v-html="t('banner_slider.title')"></p>
             </div>
         </div>
@@ -53,8 +59,8 @@
 
     <div class="bg__home">
         <div class="container py-32">
-            <h3 class="text-5xl text-white font-morice text-center relative uppercase"
-                v-html="t('banner_slider.logan')">
+            <h3 class="text-5xl text-white font-morice text-center relative uppercase">
+                {{ $t('banner_slider.logan') }}
             </h3>
         </div>
     </div>
@@ -70,6 +76,7 @@ import 'swiper/css/thumbs';
 import carpet_clean from '/src/assets/own_images/carpet_clean.jpg'
 import carpet_dust_clean from '/src/assets/own_images/carpet_dust_clean.jpg'
 import carpet_clean2 from '/src/assets/own_images/carpet_clean_zoom.jpg'
+import moyka_fasad from '/src/assets/own_images/moyka_fasad.jpg'
 
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
@@ -80,7 +87,10 @@ const slides = [
         image: carpet_dust_clean, alt: "Сотрудник клининговой компании BioClean очищает ковер экстрактором"
     },
     {
-        image: carpet_clean2, alt: "Профессиональная чистка ковров в Ташкенте"
+        image: moyka_fasad, alt: "Мойка фасадов, мойка окон зданий"
+    },
+    {
+        image: carpet_dust_clean, alt: "Сотрудник клининговой компании "
     }
 ];
 

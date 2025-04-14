@@ -1,6 +1,8 @@
 <template>
     <section id="works" class="w-full max-w-6xl mx-auto">
-        <h2 class="text-3xl font-morice  text-center mb-4" v-html="t('works_gallery')">
+        <h2 class="text-3xl font-morice  text-center mb-4">
+            <span class="text-maingreen">{{ $t('works_gallery1') }}</span>
+            {{ $t('works_gallery2') }}
         </h2>
         <swiper :modules="[Navigation]" :breakpoints="{
             320: { slidesPerView: 1.2 },
@@ -47,7 +49,7 @@ import after1 from '/src/assets/slider/after1.png'
 import before1 from '/src/assets/slider/before1.png'
 import bruschatka from '/src/assets/slider/bruschatka.jpg'
 import carpet from '/src/assets/slider/carpet.jpg'
-import fasad from '/src/assets/slider/fasad.jpg'
+import fasad from '/src/assets/slider/fasad.webp'
 import remont from '/src/assets/slider/remont.jpeg'
 import home from '/src/assets/slider/home.jpeg'
 import sofa from '/src/assets/slider/sofa.jpg'

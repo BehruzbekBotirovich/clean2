@@ -1,6 +1,8 @@
 <template>
     <div class="container py-10 mb-6">
-        <h3 class="text-4xl text-center font-morice" v-html="$t('videos_title')"></h3>
+        <h3 class="text-4xl text-center font-morice">
+            <span class="text-maingreen">{{ $t('videos_title1') }}</span> {{ $t('videos_title2') }}
+        </h3>
         <p class="text-lg text-center mb-8">{{ $t('videos_subtitle') }}</p>
         <svg width="100%" height="100%" viewBox="0 0 950 420" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="950" height="420" fill="white" />
@@ -108,8 +110,8 @@
 
             <!-- Круг 8 -->
             <a xlink:href="https://www.instagram.com/p/C6tceb3I2dy/" target="_blank">
-                <image x="272" y="309" width="100" height="100" xlink:href="/src/assets/circles/carpet-cleaner-removing-dirt.jpg"
-                    clip-path="url(#circleMask8)" />
+                <image x="272" y="309" width="100" height="100"
+                    xlink:href="/src/assets/circles/carpet-cleaner-removing-dirt.jpg" clip-path="url(#circleMask8)" />
                 <circle cx="322" cy="359" r="19" fill="#AED288" stroke="#EBF7EA" stroke-width="6" />
                 <path d="M331 359L316.75 368.526V349.474L331 359Z" fill="white" />
             </a>

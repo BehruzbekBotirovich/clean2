@@ -1,12 +1,16 @@
+import { comment } from "postcss"
+
 export const ru = {
     company_title: "Клининговая компания в Ташкенте",
     order: "Оставить Заявку",
     cleaning: "Уборка",
     place: "г.Ташкент Узбекистан",
     write_us: "Написать нам",
-    comment_title: '<span class="text-maingreen">ОТЗЫВЫ</span> О НАШЕЙ РАБОТЕ</h3>',
+    comment_title1: 'ОТЗЫВЫ',
+    comment_title2: "О НАШЕЙ РАБОТЕ",
     comment_subtitle: "Нам пишут слова благодарности.",
-    videos_title: '<span class="text-maingreen">Облако</span> нашых работ</h3>',
+    videos_title1: 'Облако',
+    videos_title2: ' нашых работ',
     videos_subtitle: "Они рады и мы рады!",
     menu: {
         title: "Меню",
@@ -17,7 +21,8 @@ export const ru = {
         contacts: "Контакты"
     },
     banner: {
-        garanty: '<span class="text-maingreen">Гарантируем </span> чистоту и безопасность вашего дома и вашей семьи',
+        garanty1: 'Гарантируем ',
+        garanty2: 'чистоту и безопасность вашего дома и вашей семьи',
         flat: "Квартир",
         offices: "Домов и офисов",
         german_tools: "Немецкая оборудования",
@@ -38,9 +43,10 @@ export const ru = {
         cleaning_description3: "Без предоплаты. Вы платите только за выполненную работу."
     },
     banner_slider: {
-        logan: "Чистота с немецким акцентом Эффективно.<br> Безопасно. По разумной цене.",
-        title: 'BioClean</span> - кампания, предоставляющая услуги по уборке и поддержанию чистоты в помещениях различного назначения.</p>',
-        clear_flat: ' <span class="text-maingreen">Чистота в квартире  </span > <br> - наша забота'
+        logan: "Чистота с немецким акцентом Эффективно. Безопасно. По разумной цене.",
+        title: 'BioClean - кампания, предоставляющая услуги по уборке и поддержанию чистоты в помещениях различного назначения.',
+        clear_flat1: 'Чистота в квартире',
+        clear_flat2: ' -наша забота'
     },
     // serives cards
     cards: {
@@ -59,7 +65,8 @@ export const ru = {
         cardsdisinfection_cleaning_desc: "Обработка помещений с целью уничтожения микробов, вирусов и других патогенов для обеспечения гигиеничной среды."
     },
 
-    works_gallery: '<span class="text-maingreen">ГАЛЕРЕЯ</span> НАШИХ РАБОТ',
+    works_gallery1: 'ГАЛЕРЕЯ',
+    works_gallery2: 'НАШИХ РАБОТ',
 
     reviews: {
         1: {
@@ -89,7 +96,9 @@ export const ru = {
         placeholder_phone: "+998 (__)-___-__-__",
         submit_request: "Оставить заявку"
     },
-    faq_title: '<span class="text-maingreen">ОТВЕТЫ </span> НА ЧАСТО <br> ЗАДАВАЕМЫЕ ВОПРОСОЫ',
+    faq_title1: 'ОТВЕТЫ  НА  ',
+    faq_title2: 'ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСОЫ',
+
     faq_subtitle: "Мы знаем, у вас много вопросов и поэтому- даем ответы.",
     footer: {
         title: "ВДОХНИНЬ В СВОЮ",

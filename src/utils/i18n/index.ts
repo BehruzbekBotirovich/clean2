@@ -26,13 +26,8 @@ const i18n = createI18n<[MessageSchema], SupportedLocale>({
 });
 
 export function setLanguage(lang: SupportedLocale) {
-    try {
-        const locale = i18n.global.locale as unknown as { value: SupportedLocale };
-        locale.value = lang;
-        document.documentElement.lang = lang;
-    } catch (e) {
-        console.error('Ошибка смены языка:', e);
-    }
+    i18n.global.locale = lang;  // Просто присваиваем строку
+    document.documentElement.lang = lang;  // Обновляем атрибут lang в <html>
 }
 
 export default i18n;

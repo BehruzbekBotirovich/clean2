@@ -1,83 +1,89 @@
 export const uz = {
-    company_title: "Tozalash kompaniyasi",
-    order: "Buyurtma berish",
-    cleaning: "Tozalash hizmati",
-    place: "Toshkent sh. O'zbekiston",
+    company_title: "Toshkentdagi klining kompaniyasi",
+    order: "Ariza qoldirish",
+    cleaning: "Tozalash",
+    place: "Toshkent, O'zbekiston",
     write_us: "Bizga yozing",
-    comment_title: '<span class="text-maingreen">Bizning  hizmat</span> haqida fikrlar</h3>',
-    comment_subtitle: "Bizga minnatdorchilik izohlari yoziladi",
-    videos_title: '<span class="text-maingreen">Bizning </span> mijozlarga servisimiz</h3>',
-    videos_subtitle: "Ular mamnun - biz ham",
+    comment_title1: 'FIKRLAR',
+    comment_title2: "ISHIMIZ HAQIDA",
+    comment_subtitle: "Bizga minnatdorchilik so'zlari yozilgan.",
+    videos_title1: 'Bulut',
+    videos_title2: 'bizning ishlarimiz',
+    videos_subtitle: "Ular baxtli, biz ham baxtlimiz!",
     menu: {
         title: "Menyu",
         home: "Bosh sahifa",
-        works: "Bizning ishlar",
+        works: "Ishlarimiz",
         services: "Xizmatlar",
-        cloud: "Namunalar buluti",
+        cloud: "Ishlar buluti",
         contacts: "Aloqa"
     },
     banner: {
-        garanty: '<span class="text-maingreen">Kafolatlaymiz</span> uyingiz va oilangiz xavfsizligi va tozaligini',
+        garanty1: 'Kafolatlaymiz ',
+        garanty2: 'uyingiz va oilangizning tozaligi va xavfsizligini',
         flat: "Kvartiralar",
         offices: "Uylar va ofislar",
-        german_tools: "Germaniya uskunalari",
+        german_tools: "Nemis uskunalari",
         profy_cleaner: "Professional tozalovchilar",
-        effectiv_service: "Samarali xizmat",
-        bug_fix: "Zararkunandalardan xalos bo'lish",
-        cleaning_all: "Polatdan shiftgacha tozalash",
-        price: "Qulay narxlarda",
+        effectiv_service: "Samarali xizmat uchun",
+        bug_fix: "zararkunandalardan xalos bo'lish",
+        cleaning_all: "Tozalash, polniy tozalik",
+        price: "qulay narxlarda",
         animal_free: "Mutlaqo xavfsiz",
-        safe: "Bolalar va uy hayvonlari uchun",
-        discount: "Birinchi buyurtmada",
+        safe: "bolalar va uy hayvonlari uchun",
+        discount: "Birlamchi buyurtma bo'yicha",
         discount_per: "10% chegirma",
-        all_work: "Barcha turdagi ishlar",
-        all_time: "Kunning istalgan vaqtida",
-        payafter: "Ish tugagandan keyin to'lov",
-        cleaning_description: "Har qanday obyektda tozalash xizmatlarini ko'rsatamiz",
-        cleaning_description2: "Ariza qoldiring sizga qulay vaqtda",
-        cleaning_description3: "Oldindan to'lov yo'q. Siz faqat bajarilgan ish uchun to'laysiz"
+        all_work: "Barcha ishlar",
+        all_time: "Kun bo'yi",
+        payafter: "Ishdan so'ng to'lov",
+        cleaning_description: "Biz har qanday tozalash turiga qo'l uramiz, har xil ob'ektlarda",
+        cleaning_description2: 'Siz uchun qulay vaqtni tanlab, ariza qoldiring.',
+        cleaning_description3: "Avanssiz. Faqat bajarilgan ish uchun to'lov qilasiz."
     },
     banner_slider: {
-        logan: "Nemis uslubidagi tozalik. Samarali.<br> Xavfsiz. Oqilona narxda.",
-        title: 'BioClean</span> — turli xonadonlar uchun tozalash va tozalikni saqlash xizmatlarini taqdim etuvchi kompaniya.</p>',
-        clear_flat: '<span class="text-maingreen">Kvartirada tozalik</span> <br> — bizning g\'amxo\'rligimiz'
+        logan: "Nemis aksenti bilan tozalik. Samarali. Xavfsiz. Aql bovar qilmas narxda.",
+        title: "BioClean - har xil maqsadlar uchun tozalash va tozalikni saqlash xizmatlarini ko'rsatuvchi kompaniya.",
+        clear_flat1: 'Kvartirada tozalash',
+        clear_flat2: "bizning g'amxo'rligimiz"
     },
+    // serives cards
     cards: {
         services_title: "Xizmatlar",
         cardsgeneral_cleaning: "Umumiy tozalash",
-        cardsgeneral_cleaning_desc: "Kvartiralar, ofislar, uylar va boshqa xonadonlarning tozalash. To'liq tozalash, shu jumladan, remontdan keyingi va umumiy tozalash.",
-        cardsafter_repair: "Remontdan keyingi tozalash",
-        cardsafter_repair_desc: "Remontdan keyin xonadonlarni tozalash, shu jumladan qurilish changi va materiallar qoldiqlarini olib tashlash.",
-        cardsfacade_washing: "Fasadlarni yuvish",
-        cardsfacade_washing_desc: "Bino fasadlaridan ifloslanishni tozalash, shu jumladan deraza va tashqi yuzalarni yuvish.",
+        cardsgeneral_cleaning_desc: "Kvartiralar, ofislar, uylar va boshqa xonalar uchun tozalash. Butunlay tozalash, ta'mirdan keyin va umumiy tozalashni o'z ichiga oladi.",
+        cardsafter_repair: "Ta'mirdan keyingi tozalash",
+        cardsafter_repair_desc: "Ta'mirdan keyingi xonalarni tozalash, shu jumladan qurilish changlarini va materiallar qolgan qismlarini olib tashlash.",
+        cardsfacade_washing: "Fasadni yuvish",
+        cardsfacade_washing_desc: "Bino fasadlarini ifloslanishdan tozalash, derazalarni va tashqi yuzalarni yuvish.",
         cardsupholstery_cleaning: "Mebelni tozalash",
-        cardsupholstery_cleaning_desc: "Mebelni professional kimyoviy tozalash, shu jumladan yostiqchalar, gilamlar va yumshoq yuzalar.",
-        cardsbrick_cleaning: "Bruschatka tozalash",
-        cardsbrick_cleaning_desc: "Bruschatkali yuzalardan ifloslanishni olib tashlash va ularning tashqi ko'rinishini tiklash.",
-        cardsdisinfection_cleaning: "Dezinfektsiya tozalash",
-        cardsdisinfection_cleaning_desc: "Xonadonlarni mikroblar, viruslar va boshqa patogenlarni yo'qotish maqsadida dezinfektsiya qilish."
+        cardsupholstery_cleaning_desc: "Mebelni professional kimyoviy tozalash, shu jumladan qoplamalar, gilamlar va yumshoq yuzalar.",
+        cardsbrick_cleaning: "Bruschatkalarni tozalash",
+        cardsbrick_cleaning_desc: "Bruschatkalar yuzasidan ifloslanishlarni olib tashlash va ularning tashqi ko'rinishini tiklash.",
+        cardsdisinfection_cleaning: "Dezinfeksiya",
+        cardsdisinfection_cleaning_desc: "Xonalarni mikroblar, viruslar va boshqa patogenlarni yo'q qilish maqsadida ishlov berish, gigiyenik muhitni ta'minlash."
     },
 
-    works_gallery: '<span class="text-maingreen">BIZNING ISHLAR</span> GALLEREYASI',
+    works_gallery1: 'GALEREYA',
+    works_gallery2: 'ISHLARIMIZ',
 
     reviews: {
         1: {
-            description: "Ishingiz uchun katta rahmat! Sizga muvaffaqiyat va farovonlik tilayman!"
+            description: "Sizning ishingiz uchun katta rahmat! Sizga muvaffaqiyatlar va rivojlanishlar tilayman!"
         },
         3: {
-            description: "Juda yoqdi, ular o'z ishining professionallaridir!!!"
+            description: "Juda yoqdi, ular o'z ishining professionalari!!!"
         },
         2: {
-            description: "Xodimlar juda muloyim, tez javob berishadi va qadoqlash juda sifatli va chiroyli!"
+            description: "Xodimlar juda muloyim, tez javob berishadi, va bu juda sifatli va chiroyli qadoqlangan!"
         },
         4: {
-            description: "Ajoyib kimyoviy tozalash, muddatidan avval tugatishdi"
+            description: "Zo'r kimyoviy tozalash, muddatidan oldin yakunladilar"
         },
         6: {
-            description: "Ijobiy sifat, professionallik, mebelni tozalash xizmatlari uchun narxlar"
+            description: "Ijobiy sifat, professionallik, xizmatlar narxi, yumshoq mebelni tozalash"
         },
         5: {
-            description: "Hamma uchun tavsiya qilaman, ular dezinfektsiya xizmatlarini ham taklif etishadi"
+            description: "Hamma uchun tavsiya qilaman, ular dezinfeksiya xizmatlariga ham ega"
         }
     },
 
@@ -86,16 +92,18 @@ export const uz = {
         leave_request: "Ariza qoldiring",
         placeholder_name: "Ivan Ivanov",
         placeholder_phone: "+998 (__)-___-__-__",
-        submit_request: "Ariza yuborish"
+        submit_request: "Ariza qoldiring"
     },
+    faq_title1: 'JAVOBLAR  ',
+    faq_title2: 'KO\'P BERILADIGAN SAVOLLAR',
 
-    faq_title: '<span class="text-maingreen">KO\'P SO\'RALADIGAN </span> SAVOLLARGA <br> JAVOBLAR',
-    faq_subtitle: "Sizning ko\'p savollaringiz borligini bilamiz va shuning uchun javob beramiz.",
+    faq_subtitle: "Biz bilamiz, ko'plab savollar bor, shuning uchun biz javob beramiz.",
     footer: {
-        title: "SIZNING XONADONINGIZGA YANGI",
-        subtitle: "NAFAS BERING",
-        description: "Bizning ishimiz bilan xonadoningizdagi havoning yangilanganini ko'rasiz va his qilasiz.",
-        orderCleaning: "Buyurtma berish"
+        title: "O'ZINGIZNING",
+        subtitle: "KVARTIRANGIZDA YANGI HAVO",
+        description: "Bizning ishimizni ko'rganingizda, kvartirangizda havoning yangilanishini sezishingiz mumkin.",
+        orderCleaning: "Ariza qoldirish"
     }
-}
-export default uz
+};
+
+export default uz;

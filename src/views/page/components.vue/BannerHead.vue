@@ -10,22 +10,26 @@
                     <div>
                         <h3 class="text-3xl text-graydark font-semibold">Bio<span class="text-maingreen">Clean</span>
                         </h3>
-                        <div class="text-graydark text-sm">{{ t('company_title') }}</div>
+                        <div class="text-graydark text-sm">{{ $t('company_title') }}</div>
                     </div>
                 </div>
 
                 <div class="mt-20">
                     <div class="text-5xl font-morice text-graydark uppercase">
-                        <p> <span class="text-maingreen">{{ t('cleaning') }}</span> {{ t('banner.flat') }} </p>
-                        <p> {{ t('banner.offices') }}</p>
+                        <p> <span class="text-maingreen">{{ $t('cleaning') }}</span> {{ $t('banner.flat') }} </p>
+                        <p> {{ $t('banner.offices') }}</p>
                     </div>
-                    <p class="py-8 w-2/3" v-html="t('banner.garanty')"> </p>
+                    <p class="py-8 w-2/3">
+                        <span class="text-maingreen">{{ $t('banner.garanty1') }}</span>
+                        {{ $t('banner.garanty2') }}
+                    </p>
 
                     <button @click="scrollTo('order_form')"
                         class="py-4 cursor-pointer px-8 rounded-2xl mb-3  text-white text-lg  gradient">
-                        {{ t('order') }}
+                        {{ $t('order') }}
                     </button>
-                    <p><span class="text-gray-600">{{ t('banner.discount') }} </span> {{ t('banner.discount_per') }}</p>
+                    <p><span class="text-gray-600">{{ $t('banner.discount') }} </span> {{ $t('banner.discount_per') }}
+                    </p>
                 </div>
             </div>
             <!-- col2 -->
@@ -87,7 +91,7 @@
                                     d="M3.524 8.857a8.288 8.288 0 0 1 8.26-7.607h.432a8.288 8.288 0 0 1 8.26 7.607a8.944 8.944 0 0 1-1.99 6.396l-4.793 5.861a2.187 2.187 0 0 1-3.386 0l-4.793-5.861a8.943 8.943 0 0 1-1.99-6.396m8.26-6.107A6.788 6.788 0 0 0 5.02 8.98a7.443 7.443 0 0 0 1.656 5.323l4.793 5.862a.687.687 0 0 0 1.064 0l4.793-5.862A7.443 7.443 0 0 0 18.98 8.98a6.788 6.788 0 0 0-6.765-6.23z" />
                             </g>
                         </svg>
-                        <h3 class="font-semibold text-nowrap">{{ t('place') }}</h3>
+                        <h3 class="font-semibold text-nowrap">{{ $t('place') }}</h3>
                     </div>
                     <language-picker-component />
                 </div>

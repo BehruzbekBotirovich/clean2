@@ -45,11 +45,11 @@ html {
     font-size: 10px;
 
     @variant sm {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     @variant md {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     @variant lg {

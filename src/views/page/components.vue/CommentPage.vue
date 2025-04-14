@@ -1,6 +1,8 @@
 <template>
     <div class="container py-16">
-        <h3 class="text-4xl text-center font-morice" v-html="$t('comment_title')"></h3>
+        <h3 class="text-4xl text-center font-morice">
+            <span class="text-maingreen">{{ $t('comment_title1') }}</span> {{ $t('comment_title2') }}
+        </h3>
         <p class="text-lg text-center">{{ $t('comment_subtitle') }}</p>
         <div class="relative w-full mt-10">
             <Swiper :modules="[Navigation]" :slides-per-view="1.2" :space-between="60" :breakpoints="{

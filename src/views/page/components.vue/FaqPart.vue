@@ -1,7 +1,8 @@
 <template>
     <div class="container py-12">
-        <h3 class="text-4xl uppercase text-center font-morice mb-4" v-html="$t('faq_title')">
-
+        <h3 class="text-4xl uppercase text-center font-morice mb-4">
+            <span class="text-maingreen"> {{ $t('faq_title1') }}</span> <br>
+            {{ $t('faq_title2') }}
         </h3>
         <p class="text-lg text-center mb-10 w-[24rem] mx-auto">{{ $t('faq_subtitle') }}</p>
         <div class="space-y-2">

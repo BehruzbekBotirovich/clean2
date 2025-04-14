@@ -1,23 +1,26 @@
 export const en = {
     company_title: "Cleaning company in Tashkent",
-    order: "Order Cleaning",
+    order: "Leave a request",
     cleaning: "Cleaning",
-    place: "Tashkent city, Uzbekistan",
+    place: "Tashkent, Uzbekistan",
     write_us: "Write to us",
-    comment_title: '<span class="text-maingreen">Comments</span> about our works</h3>',
-    comment_subtitle: "We always have good comments",
-    videos_title: '<span class="text-maingreen">Cloud of</span> our works</h3>',
-    videos_subtitle: "They happy - we are happy too",
+    comment_title1: 'REVIEWS',
+    comment_title2: "ABOUT OUR WORK",
+    comment_subtitle: "They write us words of gratitude.",
+    videos_title1: 'Cloud',
+    videos_title2: ' our works',
+    videos_subtitle: "They are happy, and we are happy!",
     menu: {
         title: "Menu",
         home: "Home",
-        works: "Our Works",
+        works: "Our works",
         services: "Services",
-        cloud: "Cloud of works",
+        cloud: "Work Cloud",
         contacts: "Contacts"
     },
     banner: {
-        garanty: '<span class="text-maingreen">We guarantee</span> the cleanliness and safety of your home and family',
+        garanty1: 'We guarantee ',
+        garanty2: 'the cleanliness and safety of your home and family',
         flat: "Apartments",
         offices: "Houses and offices",
         german_tools: "German equipment",
@@ -31,72 +34,76 @@ export const en = {
         discount: "On the first order",
         discount_per: "10% discount",
         all_work: "All types of work",
-        all_time: "At any time of day",
+        all_time: "Any time of day",
         payafter: "Payment after work",
-        cleaning_description: "We offer cleaning services for any type of objects",
-        cleaning_description2: 'Leave a request at a convenient time for you.',
-        cleaning_description3: "No prepayment required. You pay only for the work done."
+        cleaning_description: "We take on any type of cleaning for any objects",
+        cleaning_description2: 'Leave a request at your convenient time.',
+        cleaning_description3: "No prepayment. You only pay for the completed work."
     },
     banner_slider: {
-        logan: "FOR 20 YEARS WE HAVE BEEN HELPING YOU AND YOUR HOME <br> TO STAY CLEAN AND TIDY",
-        title: 'BioClean</span> - a company providing cleaning and maintenance services for various types of premises.</p>',
-        clear_flat: '<span class="text-maingreen">Cleanliness in the apartment</span> <br> - our care'
+        logan: "Cleanliness with a German accent. Effective. Safe. At a reasonable price.",
+        title: 'BioClean - a company providing cleaning and maintenance services for various premises.',
+        clear_flat1: 'Cleanliness in the apartment',
+        clear_flat2: 'is our concern'
     },
-
-    // serives cards
+    // services cards
     cards: {
-        services_title: '<span class="text-maingreen"> Our </span>Services',
-        cardsgeneral_cleaning: "General Cleaning",
-        cardsgeneral_cleaning_desc: "Cleaning of apartments, offices, houses, and other premises. Full cleaning, including post-renovation and general cleaning.",
-        cardsafter_repair: "Post-repair Cleaning",
-        cardsafter_repair_desc: "Cleaning of premises after repairs, including removal of construction dust and material residues.",
-        cardsfacade_washing: "Facade Washing",
-        cardsfacade_washing_desc: "Cleaning building facades from dirt, including window and exterior surface washing.",
-        cardsupholstery_cleaning: "Upholstery Cleaning",
-        cardsupholstery_cleaning_desc: "Professional upholstery cleaning, including furniture, carpets, and soft surfaces.",
-        cardsbrick_cleaning: "Brick Cleaning",
-        cardsbrick_cleaning_desc: "Removing dirt from brick surfaces and restoring their appearance.",
-        cardsdisinfection_cleaning: "Disinfection Cleaning",
-        cardsdisinfection_cleaning_desc: "Disinfection of premises to eliminate germs, viruses, and other pathogens for a hygienic environment."
+        services_title: "Services",
+        cardsgeneral_cleaning: "General cleaning",
+        cardsgeneral_cleaning_desc: "Cleaning apartments, offices, houses, and other premises. Full cleaning, including post-repair and general cleaning.",
+        cardsafter_repair: "Post-repair cleaning",
+        cardsafter_repair_desc: "Cleaning premises after repairs, including removing construction dust and leftover materials.",
+        cardsfacade_washing: "Facade washing",
+        cardsfacade_washing_desc: "Cleaning building facades from contamination, including washing windows and exterior surfaces.",
+        cardsupholstery_cleaning: "Upholstery cleaning",
+        cardsupholstery_cleaning_desc: "Professional dry cleaning of furniture, including upholstery, carpets, and soft surfaces.",
+        cardsbrick_cleaning: "Paving cleaning",
+        cardsbrick_cleaning_desc: "Removing dirt from paving surfaces and restoring their appearance.",
+        cardsdisinfection_cleaning: "Disinfection",
+        cardsdisinfection_cleaning_desc: "Processing premises to destroy microbes, viruses, and other pathogens to ensure a hygienic environment."
     },
 
-    works_gallery: '<span class="text-maingreen">GALLERY OF</span> OUR WORKS',
+    works_gallery1: 'GALLERY',
+    works_gallery2: 'OF OUR WORK',
 
     reviews: {
         1: {
-            description: "Huge thanks for your work! Wishing you success and prosperity!"
+            description: "Huge thanks for your work! Success and prosperity to you!"
         },
         3: {
-            description: "I really liked it, they are professionals at their job!!!"
+            description: "I really liked it, they are professionals in their field!!!"
         },
         2: {
-            description: "The staff is very polite, responds quickly, and the packaging is of very high quality and beautiful!"
+            description: "The staff is very polite, they respond quickly, and everything is beautifully packed!"
         },
         4: {
-            description: "Great dry cleaning, they finished ahead of schedule"
+            description: "Great dry cleaning, they finished before the deadline"
         },
         6: {
-            description: "Positive Quality, Professionalism, Prices for Upholstery Cleaning Services"
+            description: "Positive quality, professionalism, service prices, soft furniture cleaning"
         },
         5: {
-            description: "I recommend it to everyone, they also offer disinfection services"
+            description: "I recommend everyone, they also have disinfection services"
         }
     },
+
     form: {
-        inquiry_interest: "Are you interested!?",
+        inquiry_interest: "Interested!?",
         leave_request: "Leave a request",
         placeholder_name: "John Doe",
         placeholder_phone: "+998 (__)-___-__-__",
         submit_request: "Submit request"
     },
-    faq_title: '<span class="text-maingreen">ANSWERS</span> TO FREQUENTLY <br> ASKED QUESTIONS',
+    faq_title1: 'ANSWERS TO',
+    faq_title2: 'FREQUENTLY ASKED QUESTIONS',
+
     faq_subtitle: "We know you have many questions, so we provide answers.",
     footer: {
-        title: "INHALE FRESHNESS INTO YOUR",
+        title: "BRING FRESHNESS TO YOUR",
         subtitle: "APARTMENT",
-        description: "With our work, you will see and feel the freshness of the air in your apartment.",
-        orderCleaning: "Order Cleaning"
+        description: "You will see and feel the freshness of the air in your apartment after our work.",
+        orderCleaning: "Leave a request"
     }
-}
+};
 
-export default en
+export default en;
