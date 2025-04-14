@@ -30,11 +30,34 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
-import { setLanguage } from '@/utils/i18n';
-
 import flagUz from '/src/assets/lang_images/FlagUZ.svg';
 import flagRu from '/src/assets/lang_images/FlagRu.svg';
 import flagEn from '/src/assets/lang_images/FlagEn.svg';
+
+import { supportedLocales, setLanguage } from '@/utils/i18n';
+import type { SupportedLocale } from '@/utils/i18n';
+
+const isLocale = (val: string): val is SupportedLocale => {
+    return supportedLocales.includes(val as SupportedLocale);
+};
+
+const selectLang = async (newLang: string) => {
+    if (!isLocale(newLang)) return;
+
+    lang.value = newLang;
+
+    await router.push({
+        name: route.name || 'clean',
+        params: { ...route.params, locale: newLang },
+        query: route.query
+    });
+    if (supportedLocales.includes(lang.value as SupportedLocale)) {
+        setLanguage(lang.value as SupportedLocale);
+    }
+    window.location.reload()
+
+    isOpen.value = false;
+};
 
 const router = useRouter();
 const route = useRoute();
@@ -52,22 +75,6 @@ const languageOptions = [
     { code: 'en', name: 'English', flag: flagEn }
 ];
 
-const selectLang = async (newLang: string) => {
-    lang.value = newLang;
-
-    // ⬇ СНАЧАЛА push в роутер
-    await router.push({
-        name: route.name || 'clean',
-        params: { ...route.params, locale: newLang },
-        query: route.query
-    });
-
-    // ⬇ ПОТОМ установка языка
-    setLanguage(newLang);
-    window.location.reload();
-    isOpen.value = false;
-};
-
 const handleClickOutside = (event: MouseEvent) => {
     if (wrapperRef.value && !wrapperRef.value.contains(event.target as Node)) {
         isOpen.value = false;
@@ -83,7 +90,9 @@ const getLanguageName = (langCode: string) => {
 };
 
 onMounted(() => {
-    setLanguage(lang.value);
+    if (isLocale(lang.value)) {
+        setLanguage(lang.value);
+    }
     window.addEventListener('click', handleClickOutside);
 });
 

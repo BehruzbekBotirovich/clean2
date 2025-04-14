@@ -20,11 +20,9 @@
     </nav>
 </template>
 
-<script setup>
-const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-    }
+<script lang="ts" setup>
+const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 };
+
 </script>

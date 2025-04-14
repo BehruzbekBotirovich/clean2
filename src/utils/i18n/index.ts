@@ -27,12 +27,8 @@ const i18n = createI18n<[MessageSchema], SupportedLocale>({
 
 export function setLanguage(lang: SupportedLocale) {
     try {
-        const locale = i18n.global.locale;
-        if (typeof locale === 'object' && 'value' in locale) {
-            locale.value = lang;
-        } else {
-            (i18n.global as any).locale = lang;
-        }
+        const locale = i18n.global.locale as unknown as { value: SupportedLocale };
+        locale.value = lang;
         document.documentElement.lang = lang;
     } catch (e) {
         console.error('Ошибка смены языка:', e);

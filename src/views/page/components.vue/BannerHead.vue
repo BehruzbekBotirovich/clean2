@@ -29,11 +29,11 @@
                 </div>
             </div>
             <!-- col2 -->
-            <div class="col-span-3  ">
-                <div class="flex w-full justify-end pr-2">
+            <div class="col-span-3   lg:col-span-2 ">
+                <div class="flex md:hidden  w-full justify-end pr-2">
                     <language-picker-component class="mt-8" />
                 </div>
-                <div class="col-span-3 mb-2   lg:col-span-2 rounded-b-xl relative h-full  flex items-center">
+                <div class=" mb-2  rounded-b-xl relative h-full  flex items-center">
                     <div class="w-full flex items-end h-[50vh] md:h-full lg:mt-0">
                         <Swiper :modules="[Autoplay]" :slides-per-view="1" :loop="true" :autoplay="{
                             delay: 2000,
@@ -192,7 +192,7 @@
 
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -203,15 +203,13 @@ import LanguagePickerComponent from '@/components/LanguagePickerComponent.vue';
 import NavbarScroll from '@/components/NavbarScroll.vue';
 
 const activeIndex = ref()
-const onSlideChange = (swiper) => {
+const onSlideChange = (swiper: { realIndex: number }) => {
     activeIndex.value = swiper.realIndex; // realIndex для работы с loop
 };
-const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-    }
+const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 };
+
 </script>
 
 <style scoped>
