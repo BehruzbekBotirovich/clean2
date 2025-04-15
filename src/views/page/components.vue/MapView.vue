@@ -51,9 +51,9 @@
             </div>
 
             <div class="w-full rounded-2xl overflow-hidden shadow-lg ">
-                <iframe
+                <iframe title="Оффис BioClean - клининг, уборка по Ташкенту"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.2293685287223!2d69.33253757633338!3d41.34736799847615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef503523549f3%3A0x7423e2ce0821528e!2z0JTQtdC30LjQvdGE0LXQutGG0LjRjyDQsiDQotCw0YjQutC10L3RgtC1IEJpb0NsZWFu!5e0!3m2!1ses!2s!4v1743939400552!5m2!1ses!2s"
-                    width="100%" height="100%" style="border:0;"  loading="lazy"
+                    width="100%" height="100%" style="border:0;" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>

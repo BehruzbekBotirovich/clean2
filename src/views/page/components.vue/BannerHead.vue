@@ -111,7 +111,7 @@
                         <div>
                             <h3>{{ t('write_us') }}</h3>
                             <div class="social-links mt-2">
-                                <a href="https://t.me/BiooCleanuz" target="_blank">
+                                <a href="https://t.me/BiooCleanuz" target="_blank" aria-label="BioClean Telegram channel" >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
                                         viewBox="0 0 24 24">
                                         <path fill="currentColor" fill-rule="evenodd"
@@ -119,7 +119,7 @@
                                             clip-rule="evenodd" />
                                     </svg>
                                 </a>
-                                <a href="https://www.instagram.com/bio_clean.uz/" target="_blank">
+                                <a href="https://www.instagram.com/bio_clean.uz/" target="_blank"  aria-label="BioClean Instagram profile">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
                                         viewBox="0 0 24 24">
                                         <path fill="currentColor" fill-rule="evenodd"
@@ -127,7 +127,7 @@
                                             clip-rule="evenodd" />
                                     </svg>
                                 </a>
-                                <a href="tel:+998998062010">
+                                <a href="tel:+998998062010" aria-label="Call BioClean at +998998062010">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
                                         viewBox="0 0 24 24">
                                         <path fill="none" stroke="currentColor" stroke-linecap="round"
