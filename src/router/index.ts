@@ -6,6 +6,14 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_URL),
   routes: [
     {
+      path: '/',
+      redirect: () => {
+        const savedLang = sessionStorage.getItem('lang');
+        const defaultLocale = savedLang || 'ru';
+        return `/${defaultLocale}`;
+      },
+    },
+    {
       path: '/:locale',
       name: 'clean',
       component: () => import('@/views/page/MainPage.vue'),
