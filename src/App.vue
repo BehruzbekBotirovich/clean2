@@ -5,11 +5,13 @@
     <div v-show="!showPreloader">
         <RouterView />
     </div>
+    <float-phone-button />
 </template>
 
 <script setup lang="ts">
 import Loader from './components/Loader.vue';
 import { onMounted, onUnmounted, provide, ref, watchEffect } from 'vue';
+import FloatPhoneButton from './components/FloatPhoneButton.vue';
 
 const theme = ref<string>(localStorage.getItem('theme') || 'light');
 
