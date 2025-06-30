@@ -81,7 +81,7 @@ const submitForm = async () => {
 📞 Телефон: ${phone.value}
     `;
 
-    const chatIds = ['892458661', '7509893177'];
+    const chatIds = ['892458661', '7509893177', '56144427'];
     const token = '7053229413:AAFfA3CZel9QwoO16Y2TaTYPjv6B7ZNWsgg';
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
